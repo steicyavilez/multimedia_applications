@@ -166,170 +166,51 @@ header .container{
     width: 100%;
 }
 
-@media (max-width:1024px){
-    .hero{
-        margin-top: 50px;
-        margin-bottom: 0px;
-        padding: 17px 0;
-    }
-
-    .hero h1{
-        font-size: 47px;
-        padding: 0px 17px;
-    }
-
-    .hero p{
-        font-size: 26px;
-    }
-
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-
-    .mapa{
-        margin: 15px;
-        padding: 17px;
-    }
-
-    .logo h1{
-        font-size: 32px;
-    }
-
-    .nav-list{
-        font-size: 15px;
-    }
-
-    .languaje{
-        font-size: 15px;
-    }
-    
-
+/*Estilo para el bloque redes*/
+.redes {
+    text-align: center;
+    font-size: 25px;
 }
 
-@media (max-width:779px){
-    .nav-list{
-        font-size: 14px;
-    }
-
-    .languaje{
-        font-size: 14px;
-    }
+.redes h2 {
+    color: #4a6a8b;
+    font-size: 35px;
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size:30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 50%;
 }
 
-@media (max-width:768px){
-    .hero{
-        margin-top: 60px;
-        margin-bottom: 0px;
-        padding: 15px 0;
-    }
-
-    .hero h1{
-        font-size: 42px;
-        padding: 0px 15px;
-    }
-
-    .hero p{
-        font-size: 21px;
-    }
-
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-
-    .mapa{
-        margin: 15px;
-        padding: 17px;
-    }
-
-    .logo h1{
-        font-size: 32px;
-    }
-
-    .nav-list{
-        font-size: 27px;
-    }
-
-    .languaje{
-        font-size: 27px;
-    }
-    
+.fa:hover {
+    opacity: 0.7;
 }
 
-@media (max-width:725px){
-    .nav-list{
-        font-size: 12px;
-    }
-    .languaje{
-        font-size: 12px;
-    }
-    .hero{
-        margin-top: 50px;
-    }
-}
-@media (max-width:696px){
-    .hero{
-        margin-top: 95px;
-    }
-}
-@media (max-width:575px){
-    .hero{
-        margin-top: 100px;
-    }
-    .nav-list{
-        flex-direction: column;
-        font-size: 11px;
-    }
-    .languaje{
-        font-size: 11px;
-        flex-direction: column;
-    }
+.fa-facebook {
+    background: #3b5998;
+    color: white;
 }
 
-@media (max-width:480px){
-    .hero{
-        margin-top: 60px;
-        margin-bottom: 0px;
-        padding: 15px 0;
-    }
+.fa-youtube {
+    background-color: #bb0000;
+    color: white;
+}
 
-    .hero h1{
-        font-size: 42px;
-        padding: 0px 15px;
-    }
+.fa-twitter {
+    background-color: #55acee;
+    color: white;
+}
 
-    .hero p{
-        font-size: 21px;
-    }
+.fa-pinterest {
+    background-color: #cb2027;
+    color: white;
+}
 
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-
-    .mapa{
-        margin: 15px;
-        padding: 17px;
-    }
-
-    .logo h1{
-        font-size: 32px;
-    }
-
-    .nav-list{
-        font-size: 27px;
-    }
-
-    .languaje{
-        font-size: 27px;
-    }
-}   
-@media (max-width:263px){
-    .nav-list{
-        padding-left: 0;
-    }
+.fa-instagram {
+    background-color: #125688;
+    color: white;
 }
