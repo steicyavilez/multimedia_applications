@@ -37,19 +37,22 @@ header .container{
     display: flex;
 }
 
-.nav-list li{
+.nav-list > li{
     margin: 0 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
 }
 
-.nav-list a {
+.nav-list > li > a {
+    display:block;
+    padding: 15px 20px;
     text-decoration: none;
     color: #82a1e7;
     font-weight: 500;
     transition: color 0.3s;
 }
 
-.nav-list a:hover {
+.nav-list > li >a:hover {
     color: #f4a261;
 }
 
