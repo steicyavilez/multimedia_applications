@@ -53,14 +53,6 @@ header .container{
     color: #f4a261;
 }
 
-.nav-list:hover .submenu{
-    display: block;
-}
-
-.nav-list > a::after{
-    content: " ▼";
-    font-size: 12px;
-}
 .submenu{
     position:absolute;
     top:100%;
@@ -81,6 +73,15 @@ header .container{
 
 .submenu li a:hover{
     color: #f4a261;
+}
+
+.routes:hover .submenu{
+    display: block;
+}
+
+.routes > a::after{
+    content: " ▼";
+    font-size: 12px;
 }
 
 .languaje {
