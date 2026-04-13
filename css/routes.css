@@ -37,7 +37,7 @@ header .container{
 
 /* Barra principal */
 .navbar{
-    background:#0f7c82;
+    background:#2d3e50;
     padding:0 20px;
 }
 
@@ -54,13 +54,13 @@ header .container{
 .menu > li > a{
     display:block;
     padding:15px 20px;
-    color:white;
+    color:#82a1e7;
     text-decoration:none;
     font-weight:bold;
 }
 
 .menu > li > a:hover{
-    background:#0c666b;
+    background:#1f2b37;
 }
 
 /* Submenú */
@@ -68,7 +68,7 @@ header .container{
     position:absolute;
     top:100%;
     left:0;
-    background:#0f7c82;
+    background:#2d3e50;
     min-width:180px;
     list-style:none;
     display:none;
@@ -79,12 +79,12 @@ header .container{
 .submenu li a{
     display:block;
     padding:12px 15px;
-    color:white;
+    color:#82a1e7;
     text-decoration:none;
 }
 
 .submenu li a:hover{
-    background:#0c666b;
+    background:#1f2b37;
 }
 
 /* Mostrar submenu */
