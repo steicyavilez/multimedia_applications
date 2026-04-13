@@ -40,7 +40,6 @@ header .container{
 .nav-list > li{
     margin: 0 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
 }
 
 .nav-list > li > a {
