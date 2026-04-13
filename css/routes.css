@@ -38,6 +38,7 @@ header .container{
 }
 
 .nav-list > li{
+    position:relative;
     margin: 0 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
