@@ -43,6 +43,7 @@ header .container{
 }
 
 .nav-list > li > a {
+    display: block;
     padding: 15px 20px;
     text-decoration: none;
     color: #82a1e7;
