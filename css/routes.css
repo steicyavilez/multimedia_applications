@@ -48,7 +48,7 @@ header .container{
     padding: 15px 20px;
     text-decoration: none;
     color: #82a1e7;
-    font-weight: 500;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
@@ -69,7 +69,7 @@ header .container{
 
 .submenu li a{
     display:block;
-    padding: 12ox 15px;
+    padding: 12px 15px;
     color: #82a1e7;
     text-decoration:none;
 }
