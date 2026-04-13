@@ -47,7 +47,7 @@ header .container{
     padding: 15px 20px;
     text-decoration: none;
     color: #82a1e7;
-    font-weight: bold;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
