@@ -53,6 +53,36 @@ header .container{
     color: #f4a261;
 }
 
+.nav-list:hover .submenu{
+    display: block;
+}
+
+.nav-list > a::after{
+    content: " ▼";
+    font-size: 12px;
+}
+.submenu{
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#2d3e50;
+    min-width: 180px;
+    list-style:none;
+    display:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.submenu li a{
+    display:block;
+    padding: 12ox 15px;
+    color: #82a1e7;
+    text-decoration:none;
+}
+
+.submenu li a:hover{
+    color: #f4a261;
+}
+
 .languaje {
     display:flex;
     align-items: center;
