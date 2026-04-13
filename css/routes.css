@@ -88,12 +88,12 @@ header .container{
 }
 
 /* Mostrar submenu */
-.routes:hover .submenu{
+.dropdown:hover .submenu{
     display:block;
 }
 
 /* Flecha */
-.routes > a::after{
+.dropdown > a::after{
     content:" ▼";
     font-size:12px;
 }
