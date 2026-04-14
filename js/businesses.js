@@ -4,7 +4,7 @@ check.addEventListener("click",idioma);
 function idioma(){
     let id=check.checked;
     if(id==true){
-        location.href="subsecciones es/businesses.html";
+        location.href="es/businesses.html";
     }else{
         location.href="../businesses.html";
     }
