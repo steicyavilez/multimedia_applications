@@ -9,7 +9,6 @@ body{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -33,6 +32,9 @@ header .container{
 
 .logo h1{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:#adc4ed;
 }
 
 /* Barra principal */
@@ -45,6 +47,9 @@ header .container{
 .menu{
     list-style:none;
     display:flex;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .menu > li{
@@ -106,7 +111,7 @@ header .container{
     display:flex;
     align-items: center;
     gap: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .languaje .en{
     color:#c6cbd4;
@@ -160,6 +165,8 @@ header .container{
 .introduccion h1{
     font-size: 48px;
     color: #1e4367;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 .introduccion p{
     font-size: 20px;
@@ -169,6 +176,8 @@ header .container{
     margin-right: 50px;
     padding: 0 70px 0px 70px;
     color: #4a4a4a;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 /*Estilos para el bloque informacion*/
@@ -203,7 +212,9 @@ header .container{
 }
 
 .cultura-imagen h2 {
-    color: #1e4367;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #247294;
     font-size: 32px;
     text-align: center;
     padding: 0 40px;
@@ -216,6 +227,8 @@ header .container{
     text-align: left;
     padding: 0 40px;
     margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 footer{
@@ -223,6 +236,8 @@ footer{
     color: #c6cbd4;
     text-align: center;
     padding: 50px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 .footer p{
     display: block;
