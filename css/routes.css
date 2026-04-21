@@ -57,10 +57,12 @@ header .container{
     color:#c6cbd4;
     text-decoration:none;
     font-weight:bold;
+    transition: color 0.3s;
 }
 
 .menu > li > a:hover{
     background:#1f2937;
+    color:#76a1f1;
 }
 
 /* Submenú */
@@ -81,10 +83,12 @@ header .container{
     padding:12px 15px;
     color:#c6cbd4;
     text-decoration:none;
+    transition: color 0.3s;
 }
 
 .submenu li a:hover{
     background:#1f2937;
+    color:#76a1f1;
 }
 
 /* Mostrar submenu */
@@ -135,10 +139,10 @@ header .container{
 }
 .languaje .check:checked:after{
     left:25px;
-    border:2px solid #0d3e72;
+    border:2px solid #76a1f1;
 }
 .languaje .check:checked:before{
-    background:#0d3e72;
+    background:#76a1f1;
 }
 .hero{
     background-position: center;
@@ -173,7 +177,7 @@ header .container{
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    margin-top: 70px;
+    margin-bottom: 100px;
 }
 
 img{

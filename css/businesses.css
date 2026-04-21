@@ -1,7 +1,7 @@
 /*Definir estilos para el body*/
 body{
     line-height: 1.6;
-    background-color: #f5f5dc;
+    background-color: #edf5fe;
     color: #333;
 }
 
@@ -13,8 +13,8 @@ body{
 }
 
 header{
-    background-color: #2d3e50; /*Color de fondo*/
-    color: #82a1e7; /*Color de la fuente*/
+    background-color: #1f2937;; /*Color de fondo*/
+    color: #c6cbd4; /*Color de la fuente*/
     padding: 10px 0;
     position:fixed;
     width: 100%; /*Ocupa todo el ancho de la ventana del navegador*/
@@ -37,7 +37,7 @@ header .container{
 
 /* Barra principal */
 .navbar{
-    background:#2d3e50;
+    background:#1f2937;
     padding:0 20px;
 }
 
@@ -54,13 +54,15 @@ header .container{
 .menu > li > a{
     display:block;
     padding:15px 20px;
-    color:#82a1e7;
+    color:#c6cbd4;
     text-decoration:none;
     font-weight:bold;
+    transition: color 0.3s;
 }
 
 .menu > li > a:hover{
-    background:#1f2b37;
+    background:#1f2937;
+    color:#76a1f1;
 }
 
 /* Submenú */
@@ -68,7 +70,7 @@ header .container{
     position:absolute;
     top:100%;
     left:0;
-    background:#2d3e50;
+    background:#1f2937;
     min-width:180px;
     list-style:none;
     display:none;
@@ -79,12 +81,14 @@ header .container{
 .submenu li a{
     display:block;
     padding:12px 15px;
-    color:#82a1e7;
+    color:#c6cbd4;
     text-decoration:none;
+    transition: color 0.3s;
 }
 
 .submenu li a:hover{
-    background:#1f2b37;
+    background:#1f2937;
+    color:#76a1f1;
 }
 
 /* Mostrar submenu */
@@ -105,10 +109,10 @@ header .container{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .languaje .en{
-    color:#82a1e7
+    color:#c6cbd4;
 }
 .languaje .es{
-    color:#82a1e7;
+    color:#c6cbd4;
 }
 .languaje .check{
     position:relative;
@@ -127,7 +131,7 @@ header .container{
     position: absolute;
     width: 25px;
     height: 25px;
-    background: #fff;
+    background: #f9fbfe;
     border-radius: 25px;
     transition: 0.25s;
     border: 2px solid #6d6767;
@@ -135,85 +139,71 @@ header .container{
 }
 .languaje .check:checked:after{
     left:25px;
-    border:2px solid #82a1e7;
+    border:2px solid #76a1f1;
 }
 .languaje .check:checked:before{
-    background:#82a1e7;
+    background:#76a1f1;
 }
-
-/*Estilos para el bloque hero*/
 .hero{
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #82a1e7;
-    padding: 20px 20px 0px 20px;
+    padding: 50px 20px 0px 20px;
     margin-top: 70px;
 }
-.hero h1{
+.introduccion{
+    max-width: 1200px;
+    margin: auto;
+}
+.introduccion h1{
     font-size: 48px;
+    color: #1e4367;
 }
-
-/*Estilos para el bloque informacion*/
-.section{
-    padding: 0px 20px 60px 20px;
-    background-color: #f5f5dc;
-}    
-
-.section:nth-child(even){
-    background-color: #f5f5dc;
-}
-
-.container {
-    max-width: 12000px;
-    margin:auto;
-}
-
-.container h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 35px;
-    color: #4a6a8b;
-}
-
-.container p {
+.introduccion p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0 70px 0px 70px;
     color: #4a4a4a;
-    text-align: center;
-    justify-content: center;
-    font-size: 27px;
-    padding: 0 140px;
 }
 
 /*Estilos para el bloque galeria*/
 .galeria{
     padding: 0px 20px 60px 20px;
-    background-color: #f5f5dc;
+    background-color: #edf5fe;
 }    
 
 .galeria:nth-child(even){
-    background-color: #f5f5dc;
+    background-color: #edf5fe;
 }
 
 .texto {
-    max-width: 12000px;
+    max-width: 1200px;
     margin:auto;
+    background-color: #ddecfe;
 }
 
-.texto h3 {
+.texto h2 {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 35px;
-    color: #6c8fa3;
+    color: #1e4367;
+    font-size: 32px;
+    margin-top: 50px;
+    background-color: #ddecfe;
 }
 
 .texto p {
     color: #4a4a4a;
     text-align: center;
     justify-content: center;
-    font-size: 27px;
+    font-size: 20px;
     padding: 0 140px;
+    margin-bottom: 50px;
+    background-color: #ddecfe;
 }
 
 .row {
@@ -238,51 +228,17 @@ header .container{
     width: 100%;
 }
 
-/*Estilo para el bloque redes*/
-.redes {
+footer{
+    background: #1f2937;
+    color: #c6cbd4;
     text-align: center;
-    font-size: 25px;
+    padding: 50px 20px;
 }
-
-.redes h2 {
-    color: #4a6a8b;
-    font-size: 35px;
-    text-align: center;
-}
-.fa {
-    padding: 20px;
-    font-size:30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3b5998;
-    color: white;
-}
-
-.fa-youtube {
-    background-color: #bb0000;
-    color: white;
-}
-
-.fa-twitter {
-    background-color: #55acee;
-    color: white;
-}
-
-.fa-pinterest {
-    background-color: #cb2027;
-    color: white;
-}
-
-.fa-instagram {
-    background-color: #125688;
-    color: white;
+.footer p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
