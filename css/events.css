@@ -186,21 +186,6 @@ header .container{
     margin-bottom: 60px;
 }
 
-.texto {
-    text-align: center;
-    padding: 0px 32px 32px 32px;
-}
-
-.texto h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: #247294;
-    font-size: 32px;
-    text-align: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .row {
     display: -ms-flexbox; 
     display: flex;
