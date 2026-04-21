@@ -1,5 +1,5 @@
 var check=document.querySelector(".languaje .check");
-check.addEventListener("click",idioma);
+check.addEventListener('click',idioma);
 
 function idioma(){
     let id=check.checked;

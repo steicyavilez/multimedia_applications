@@ -124,7 +124,7 @@ header .container{
     width:50px;
 }
 .languaje .check:before{
-    content: "";
+    content: '';
     position: absolute;
     width: 50px;
     height: 25px;
@@ -132,7 +132,7 @@ header .container{
     border-radius: 25px;
 }
 .languaje .check:after{
-    content:"";
+    content: '';
     position: absolute;
     width: 25px;
     height: 25px;
