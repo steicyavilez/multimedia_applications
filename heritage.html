@@ -74,47 +74,68 @@
     </section>
 
     <!-- Sección de cultura y patrimonio -->
-    <section id="patrimonios" class="informacion">
-        <div class="contenido">
-            <div class="culuras">
-                <div class="cultura-imagen">
-                    <img src="images/culture/museo arqueologico zenu 1.jpg" alt="imagen de museo" width="325" height="300">
-                    <h2>Zenú Archaeological Museum </h2>
-                    <p>
-                        This museum is a fundamental space for learning about the history of the region, as it houses an important collection of ceramic pieces made by the Zenú culture, as well as stone tools, bone remains, photographs, and other historical artifacts.
-                        <br>
-                        A visit to this museum allows one to understand the practices, beliefs, and ways of life of the territory’s ancient inhabitants, strengthening the value of cultural heritage.
-                    </p>
+    <section id="tradiciones" class="informacion">
+        <div class="culuras">
+            <div class="cards">
+                <div class="card" onclick="abrirModal('museum')">
+                    <img src="images/culture/museo arqueologico zenu 1.jpg" alt="Museo"/>
+                    <div class="card-body">
+                        <h2>Zenú Archaeological Museum </h2>  
+                        <p>This museum is a fundamental space for learning about the history of the region, as it houses an important collection of ceramic pieces made by the Zenú culture, as well as stone tools, bone remains, photographs, and other historical artifacts.</p>                  
+                    </div>
                 </div>
-                <div class="cultura-imagen">
-                    <img src="images/culture/artesanias 1.jpg" alt="imagen de artesanias" width="325" height="300">
-                    <h2>Crafts</h2>
-                    <p>
-                        The crafts of the Tierralta area are a living expression of cultural identity, especially those made by the Embera Neka Artisans Association of the Upper Sinú.
-                        <br>
-                        These products include bracelets, necklaces, backpacks, hats, and bags, created using traditional techniques passed down through generations. Therefore, each piece reflects creativity, symbolism, and a deep connection with nature, combining ancestral wisdom with touches of innovation.
-                    </p>
+                <div class="card" onclick="abrirModal('artesanias')">
+                    <img src="images/culture/artesanias 1.jpg" alt="Artesanías"/>
+                    <div class="card-body">
+                        <h2>Crafts </h2>
+                        <p>The crafts of the Tierralta area are a living expression of cultural identity, especially those made by the Embera Neka Artisans Association of the Upper Sinú.</p>
+                    </div>
                 </div>
-                <div class="cultura-imagen">
-                    <img src="images/culture/danza embera katio 1.jpg" alt="imagen de danza" width="325" height="300">
-                    <h2>Embera Katio Dance </h2>
-                    <p>
-                        The dances of the Embera Katio people are an ancestral tradition that is still preserved today. These cultural expressions are deeply connected to nature, rituals, and the worldview of this indigenous community.
-                        <br>
-                        Through their movements, music, and clothing, these dances convey teachings about respect for the environment, spirituality, and the importance of maintaining balance with nature. 
-                    </p>
+                <div class="card" onclick="abrirModal('danza')">
+                    <img src="images/culture/danza embera katio 1.jpg" alt="Danza Embera Katio"/>
+                    <div class="card-body">
+                        <h2>Embera Katio Dance </h2>
+                        <p>The dances of the Embera Katio people are an ancestral tradition that is still preserved today. These cultural expressions are deeply connected to nature, rituals, and the worldview of this indigenous community.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- ── MODAL ── -->
+    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="modal-box" id="modalBox">
+            <button class="modal-close" onclick="cerrarModal()">✕</button>
+            <div class="modal-img-wrap">
+                <img id="modal-img" src="" alt=""/>
+                <div class="modal-img-title" id="modal-titulo"></div>
+            </div>
+            <div class="modal-body">
+                <p id="modal-texto-1"></p>
+                <p id="modal-texto-2"></p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Pie de página -->
     <footer>
-        <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
-        <p>Multimedia Application - Phase 3</p>
-        <p>Student: Steicy Avilez Plaza</p>
-        <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
-        <p>© 2026 Experience Tierralta • All rights reserved </p>
+        <div class="materia">
+            <h3>Multimedia Applications - Phase 3</h3>
+        </div>
+        <div class="universidad">
+            <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
+            <p>Student: Steicy Avilez Plaza</p>
+        </div>
+        <div class="creditos">
+            <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
+            <p>Credits: Images taken from Google and Facebook</p>
+            <p>Credits: Information created by Steicy and subsequently improved in its wording and structure with the support of the ChatGPT tool (OpenAI, 2026).</p>
+        </div>
+        <hr>
+        <div class="final">
+        <p>© 2026 Experience Tierralta • All rights reserved </p>    
+        </div>
     </footer>
 
     <script src="js/heritage.js"></script>

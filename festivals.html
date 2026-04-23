@@ -73,58 +73,75 @@
     </section>
 
     <!-- Sección de eventos y festivaless -->
-    <section id="festivales" class="informacion">
-        <div class="contenido">
-            <div class="eventos">
-                <div class="evento-imagen">
-                    <img src="images/events/fandango de reyes 1.jpg" alt="imagen de fandango de reyes" width="300" height="400">
-                    <h2>Fandango de Reyes (Three Kings’ Day Festival)</h2>
-                    <p>
-                        The Fandango of the Three Kings is one of Tierralta’s most important festivities and is celebrated in January. This event features parades, musical performances, and the traditional pollera dance. Participants wear typical costumes such as the vueltiao hat and dance to the rhythm of the fandango, often accompanied by lit candles.
-                        <br>
-                        The participation of children in the children’s fandango is also a highlight, ensuring the transmission of this tradition to new generations. 
-                    </p>                
+    <section id="tradiciones" class="informacion">
+        <div class="culuras">
+            <div class="cards">
+                <div class="card" onclick="abrirModal('fandango')">
+                    <img src="images/events/fandango de reyes 1.jpg" alt="Fandango"/>
+                    <div class="card-body">
+                        <h2>Fandango de Reyes (Three Kings’ Day Festival)</h2>
+                        <p>The Fandango of the Three Kings is one of Tierralta’s most important festivities and is celebrated in January. This event features parades, musical performances, and the traditional pollera dance. Participants wear typical costumes such as the vueltiao hat and dance to the rhythm of the fandango, often accompanied by lit candles.</p>
+                    </div>
                 </div>
-                <div class="evento-imagen">
-                    <img src="images/events/fiesta de corralejas 1.jpg" alt="imagen de fiesta de corralejas" width="300" height="400">
-                    <h2>Corralejas Festival</h2>
-                    <p>
-                        Celebrated in March in honor of Saint Joseph, the corralejas are one of the region’s most representative festivities.
-                        <br>
-                        This event includes activities related to cattle ranching traditions, as well as artistic performances, concerts, and folkloric presentations. Its large crowds and festive atmosphere make it a unique cultural experience for those visiting Tierralta at this time of year.
-                    </p>                
+                <div class="card" onclick="abrirModal('corralejas')">
+                    <img src="images/events/fiesta de corralejas 1.jpg" alt="Cumbia"/>
+                    <div class="card-body">
+                        <h2>Corralejas Festival</h2>
+                        <p>Celebrated in March in honor of Saint Joseph, the corralejas are one of the region’s most representative festivities.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="eventos"> 
-                <div class="evento-imagen">
-                    <img src="images/events/aniversario de tierralta 1.jpg" alt="imagen de aniversario de tierralta" width="300" height="400">
-                    <h2>Tierralta Anniversary</h2>
-                    <p>
-                        In November, the municipality celebrates its anniversary with a wide-ranging cultural and recreational program.
-                        <br>
-                        During this celebration, free concerts, artistic performances, and activities for the whole family take place. Vallenato, tropical, and folk music are featured, creating an atmosphere of celebration and local identity.
-                    </p>                
+                <div class="card" onclick="abrirModal('aniversario')">
+                    <img src="images/events/aniversario de tierralta 1.jpg" alt="Vallenato"/>
+                    <div class="card-body">
+                        <h2>Tierralta Anniversary</h2>
+                        <p>In November, the municipality celebrates its anniversary with a wide-ranging cultural and recreational program.</p>
+                    </div>
                 </div>
-                <div class="evento-imagen">
-                    <img src="images/events/festival del turismo y la cultura 1.jpg" alt="imagen de festival de trismo y cultura" width="300" height="400">
-                    <h2>Tourism and Culture Festival </h2>
-                    <p>
-                        This festival aims to promote sustainable tourism and highlight Tierralta’s cultural heritage.
-                        <br>
-                        It includes spaces for dialogue on community-based tourism, artistic displays, food fairs featuring local flavors, craft exhibitions, dances, and parades. Therefore, it is an excellent opportunity to discover the municipality’s cultural and natural diversity.
-                    </p>                
+                <div class="card" onclick="abrirModal('turismo')">
+                    <img src="images/events/festival del turismo y la cultura 1.jpg" alt="Vallenato"/>
+                    <div class="card-body">
+                        <h2>Tourism and Culture Festival </h2>
+                        <p>This festival aims to promote sustainable tourism and highlight Tierralta’s cultural heritage.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- ── MODAL ── -->
+    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="modal-box" id="modalBox">
+            <button class="modal-close" onclick="cerrarModal()">✕</button>
+            <div class="modal-img-wrap">
+                <img id="modal-img" src="" alt=""/>
+                <div class="modal-img-title" id="modal-titulo"></div>
+            </div>
+            <div class="modal-body">
+                <p id="modal-texto-1"></p>
+                <p id="modal-texto-2"></p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Pie de página -->
     <footer>
-        <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
-        <p>Multimedia Application - Phase 3</p>
-        <p>Student: Steicy Avilez Plaza</p>
-        <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
-        <p>© 2026 Experience Tierralta • All rights reserved </p>
+        <div class="materia">
+            <h3>Multimedia Applications - Phase 3</h3>
+        </div>
+        <div class="universidad">
+            <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
+            <p>Student: Steicy Avilez Plaza</p>
+        </div>
+        <div class="creditos">
+            <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
+            <p>Credits: Images taken from Google and Facebook</p>
+            <p>Credits: Information created by Steicy and subsequently improved in its wording and structure with the support of the ChatGPT tool (OpenAI, 2026).</p>
+        </div>
+        <hr>
+        <div class="final">
+        <p>© 2026 Experience Tierralta • All rights reserved </p>    
+        </div>
     </footer>
 
     <script src="js/festivals.js"></script>

@@ -67,49 +67,69 @@
 
     <!-- Sección de cultura y tradiciones -->
     <section id="tradiciones" class="informacion">
-        <div class="contenido">
-            <div class="culuras">
-                <div class="cultura-imagen">
-                    <img src="../images/culture/fandango 1.jpg" alt="imagen de fandango" width="325" height="300">
-                    <h2>Fandango</h2>
-                    <p>
-                        El fandango es una de las expresiones culturales más representativas de la región, ya que se interpreta con bandas folclóricas y es protagonista en desfiles, comparsas y celebraciones populares.
-                        <br>
-                        Durante este baile, las mujeres lucen coloridas poleras y los hombres el tradicional sombrero vueltiao, también, cuenta con un elemento característico, el cual, es el uso de velas encendidas que aportan un ambiente simbólico y festivo, además, esta tradición involucra a personas de todas las edades, lo que permute que se mantenga viva a través del tiempo.
-                    </p>
+        <div class="culuras">
+            <div class="cards">
+                <div class="card" onclick="abrirModal('fandango')">
+                    <img src="../images/culture/fandango 1.jpg" alt="Fandango"/>
+                    <div class="card-body">
+                        <h2>Fandango</h2>
+                        <p>El fandango es una de las expresiones culturales más representativas de la región, ya que se interpreta con bandas folclóricas y es protagonista en desfiles, comparsas y celebraciones populares.</p>
+                    </div>
                 </div>
-                <div class="cultura-imagen">
-                    <img src="../images/culture/cumbia 1.jpg" alt="imagen de cumbia"width="325" height="300">
-                    <h2>Cumbia</h2>
-                    <p>
-                        La cumbia es una danza que combina ritmo, elegancia y simbolismo, se baila en pareja con un estilo de cortejo, donde la mujer, con una falda amplia, realiza movimientos circulares mientas sostiene velas encendidas.
-                        <br>
-                        El hombre la acompaña con pasos suaves y coordinado, girando alrededor del grupo musical en sentido contrario a las manecillas del reloj, esta danza representa la unión cultural y es una de las manifestaciones mas importantes del folclor regional.
-                    </p>                
+                <div class="card" onclick="abrirModal('cumbia')">
+                    <img src="../images/culture/cumbia 1.jpg" alt="Cumbia"/>
+                    <div class="card-body">
+                        <h2>Cumbia</h2>
+                        <p>La cumbia es una danza que combina ritmo, elegancia y simbolismo, se baila en pareja con un estilo de cortejo, donde la mujer, con una falda amplia, realiza movimientos circulares mientas sostiene velas encendidas.</p>
+                    </div>
                 </div>
-                <div class="cultura-imagen">
-                    <img src="../images/culture/vallenato 1.jpg" alt="imagen de vallenato" width="325" height="300">
-                    <h2>Vallenato</h2>
-                    <p>
-                        El vallenato es un genero musical emblemático de la región Caribe que también tiene gran presencia en Tierralta, ya que, se interpreta con instrumentos tradicionales como el acordeón, la caja y la guacharaca. 
-                        <br>
-                        Sus ritmos principales incluyen el paseo, merengue, son y puya, y sus letras suelen contar historias de la vida cotidiana, el amor y la cultura popular, por eso, el baile es en pareja y se caracteriza por movimientos suaves y cadenciosos que reflejan cercanía y expresión emocional.
-                    </p>                
+                <div class="card" onclick="abrirModal('vallenato')">
+                    <img src="../images/culture/vallenato 1.jpg" alt="Vallenato"/>
+                    <div class="card-body">
+                        <h2>Vallenato</h2>
+                        <p>El vallenato es un genero musical emblemático de la región Caribe que también tiene gran presencia en Tierralta, ya que, se interpreta con instrumentos tradicionales como el acordeón, la caja y la guacharaca. </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- ── MODAL ── -->
+    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="modal-box" id="modalBox">
+            <button class="modal-close" onclick="cerrarModal()">✕</button>
+            <div class="modal-img-wrap">
+                <img id="modal-img" src="" alt=""/>
+                <div class="modal-img-title" id="modal-titulo"></div>
+            </div>
+            <div class="modal-body">
+                <p id="modal-texto-1"></p>
+                <p id="modal-texto-2"></p>
+            </div>
+        </div>
+    </div>
 
     <!-- Pie de página -->
     <footer>
-        <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
-        <p>Aplicación Multimedia - Fase 3</p>
-        <p>Estudiantes: Steicy Avilez Plaza</p>
-        <p>Referencias: contenido turístico basado en información pública de Tieralta - Córdoba </p>
-        <p>© 2026 Vive Tierralta • Todos los derechos reservados</p>
+        <div class="materia">
+            <h3>Aplicaciones Multimedia - Fase 3</h3>
+        </div>
+        <div class="universidad">
+            <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
+            <p>Estudiante: Steicy Avilez Plaza</p>
+        </div>
+        <div class="creditos">
+            <p>Referencias: contenido turístico basado en información pública de Tieralta - Córdoba </p>
+            <p>Créditos: Imágenes tomadas de Google y Facebook</p>
+            <p>Créditos: Información creada por Steicy, y posteriormente mejorada en su redacción y estructura con apoyo de la herramienta ChatGPT (OpenAI,2026).</p>
+        </div>
+        <hr>
+        <div class="final">
+        <p>© 2026 Vive Tierralta • Todos los derechos reservados</p>    
+        </div>
     </footer>
 
-    <script src="../js/traditions.js"></script>
+    <script src="../es js/traditions-es.js"></script>
 
 </body>
 </html>

@@ -180,65 +180,182 @@ header .container{
     font-weight: 400;
 }
 
-/*Estilos para el bloque informacion*/
-.informacion{
-    padding: 0px 20px 60px 20px;
+/* ── SECTION ── */
+#tradiciones {
+    padding: 0 20px 60px;
     background-color: #edf5fe;
     margin-top: 60px;
-}    
-
-.informacion:nth-child(even){
-    background-color: #edf5fe;
 }
 
-.contenido {
+.culuras {
     max-width: 1200px;
-    margin:auto;
+    margin: auto;
 }
 
-.culuras{
+/* ── CARDS ── */
+.cards {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.cultura-imagen {
-    flex: 1;
-    margin: 10px;
-    padding: 15px;
-    background-color: #ddecfe;
+.card {
+    width: 380px;
+    background: #ddecfe;
     border-radius: 10px;
-    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-.cultura-imagen h2 {
-    font-family: 'Roboto', sans-serif;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 14px 16px 18px;
+}
+
+.card-body h2 {
+    font-size: 1.05rem;
     font-weight: bold;
+    margin-bottom: 8px;
     color: #247294;
     font-size: 32px;
-    text-align: center;
-    padding: 0 40px;
-    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.cultura-imagen p {
+.card-body p {
+    font-size: 0.84rem;
     color: #4a4a4a;
-    font-size: 20px;
-    text-align: left;
-    padding: 0 40px;
-    margin-top: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* ── OVERLAY ── */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(3px);
+    overflow-y: auto;
+    padding: 30px 16px 50px;
+}
+
+.modal-overlay.active {
+    display: block;
+}
+
+/* ── MODAL BOX ── */
+.modal-box {
+    background: #ddecfe;
+    width: 100%;
+    max-width: 580px;
+    border-radius: 18px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    animation: popIn 0.3s cubic-bezier(.22,.68,0,1.2) both;
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: translateY(20px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+
+    /* ── CLOSE BUTTON ── */
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 20;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    backdrop-filter: blur(4px);
+    line-height: 1;
+}
+.modal-close:hover { background: rgba(0, 73, 200, 0.8); }
+
+/* ── IMAGE WRAP with title overlay ── */
+.modal-img-wrap {
+    position: relative;
+}
+
+.modal-img-wrap img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    display: block;
+}
+
+.modal-img-title {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 12px 20px 16px;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
+    color: #e1e6ef;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* ── MODAL BODY ── */
+.modal-body {
+    padding: 22px 26px 30px;
+}
+
+.modal-body p {
+    font-size: 0.93rem;
+    color: #4a4a4a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.78;
+    margin-bottom: 12px;
+}
+
+/* scrollbar styling on the overlay */
+.modal-overlay::-webkit-scrollbar { width: 7px; }
+.modal-overlay::-webkit-scrollbar-track { background: #d0dce8; }
+.modal-overlay::-webkit-scrollbar-thumb { background: #1565C0; border-radius: 99px; }
+
+@media (max-width: 480px) {
+    .modal-img-wrap img { height: 220px; }
 }
 
 footer{
     background: #1f2937;
-    color: #c6cbd4;
     text-align: center;
     padding: 50px 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
+
 .footer p{
     display: block;
     margin-block-start: 1em;
@@ -246,4 +363,36 @@ footer{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+}
+.materia h3{
+    font-size: 26px;
+    color: #e1e6ef;
+    margin-top: 15px;
+}
+.universidad {
+    margin-top: 15px;
+}
+.universidad p{
+    font-size: 14px;
+    font-weight: bold; /* O usa valores numéricos: 700, 800, 900 */
+    color: #c6cbd4;
+    margin-top: 3px;
+}
+.creditos{
+    margin-top: 6px;
+}
+.creditos p{
+    font-size: 12px;
+    color: #acb0b7;
+    margin-top: 3px;
+}
+.final p{
+    font-size: 12px;
+    color: #9ea1a7;
+}
+hr{   
+    border: none; /* Quita el borde por defecto */
+    border-top: 3px solid #2e3949; /* Define grosor, estilo y color */
+    width: 80%;   /* Ancho de la línea */
+    margin: 20px auto;  /* Centra la línea y añade margen superior/inferior */
 }

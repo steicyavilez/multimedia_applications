@@ -73,58 +73,75 @@
     </section>
 
     <!-- Sección de eventos comunitarios -->
-    <section id="comunitarios" class="informacion">
-        <div class="contenido">
-            <div class="eventos">
-                <div class="evento-imagen">
-                    <img src="images/events/media maraton dorada 1.jpg" alt="imagen de media maraton dorada" width="400" height="400">
-                    <h2>Golden Half Marathon </h2>
-                    <p>
-                        This sporting and charitable event aimed to support an important social cause: the construction of the Macondo Children’s Home, a shelter for children with cancer and their caregivers.
-                        <br>
-                        Community participation raised funds and demonstrated the social commitment of Tierralta’s residents, combining sport, solidarity, and hope.
-                    </p>                
+    <section id="tradiciones" class="informacion">
+        <div class="culuras">
+            <div class="cards">
+                <div class="card" onclick="abrirModal('maraton')">
+                    <img src="images/events/media maraton dorada 1.jpg" alt="Fandango"/>
+                    <div class="card-body">
+                        <h2>Golden Half Marathon</h2>
+                        <p>This sporting and charitable event aimed to support an important social cause: the construction of the Macondo Children’s Home, a shelter for children with cancer and their caregivers.</p>
+                    </div>
                 </div>
-                <div class="evento-imagen">
-                    <img src="images/events/festival gastronomico saberes y fogones 1.jpg" alt="imagen de festival gastronomico saberes y fogones" width="300" height="400">
-                    <h2>Gastronomic Festival: Knowledge and Stives</h2>
-                    <p>
-                        This festival highlights the culinary richness of the Alto Sinú region through traditional cooking competitions and the participation of local restaurants.
-                        <br>
-                        Featuring live music, food tastings, a buffet of traditional dishes, and a farmers’ market where you can buy fresh, local products, it’s the perfect place to enjoy culture through its flavors.
-                    </p>
+                <div class="card" onclick="abrirModal('gastronomico')">
+                    <img src="images/events/festival gastronomico saberes y fogones 1.jpg" alt="Cumbia"/>
+                    <div class="card-body">
+                        <h2>Gastronomic Festival: Knowledge and Stives</h2>
+                        <p>This festival highlights the culinary richness of the Alto Sinú region through traditional cooking competitions and the participation of local restaurants.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="eventos"> 
-                <div class="evento-imagen">
-                    <img src="images/events/talleres en la biblioteca municipal 1.jpg" alt="imagen de talleres biblioteca municipal" width="300" height="400">
-                    <h2>Workshops at the Municipal Library </h2>
-                    <p>
-                        The municipal library organizes workshops for children and young people between the ages of 8 and 16, promoting learning and creativity.
-                        <br>
-                        Activities include dance, reading, theater, painting, and music, contributing to the cultural and educational development of the community.
-                    </p>                
+                <div class="card" onclick="abrirModal('biblioteca')">
+                    <img src="images/events/talleres en la biblioteca municipal 1.jpg" alt="Vallenato"/>
+                    <div class="card-body">
+                        <h2>Workshops at the Municipal Library</h2>
+                        <p>The municipal library organizes workshops for children and young people between the ages of 8 and 16, promoting learning and creativity.</p>
+                    </div>
                 </div>
-                <div class="evento-imagen">
-                    <img src="images/events/actividades de comfacor 1.jpg" alt="imagen de cactividades de comfacor" width="300" height="400">
-                    <h2>Comfacor Activities </h2>
-                    <p>
-                        The Córdoba Family Compensation Fund (Comfacor) also promotes activities for children and young people in the municipality.
-                        <br>
-                        These include painting workshops, cultural festivals, sports activities, crafts, and recreational spaces that foster talent, creativity, and the constructive use of free time.
-                    </p>                
+                <div class="card" onclick="abrirModal('comfacor')">
+                    <img src="images/events/actividades de comfacor 1.jpg" alt="Vallenato"/>
+                    <div class="card-body">
+                        <h2>Comfacor Activities</h2>
+                        <p>The Córdoba Family Compensation Fund (Comfacor) also promotes activities for children and young people in the municipality.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- ── MODAL ── -->
+    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="modal-box" id="modalBox">
+            <button class="modal-close" onclick="cerrarModal()">✕</button>
+            <div class="modal-img-wrap">
+                <img id="modal-img" src="" alt=""/>
+                <div class="modal-img-title" id="modal-titulo"></div>
+            </div>
+            <div class="modal-body">
+                <p id="modal-texto-1"></p>
+                <p id="modal-texto-2"></p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Pie de página -->
     <footer>
-        <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
-        <p>Multimedia Application - Phase 3</p>
-        <p>Student: Steicy Avilez Plaza</p>
-        <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
-        <p>© 2026 Experience Tierralta • All rights reserved </p>
+        <div class="materia">
+            <h3>Multimedia Applications - Phase 3</h3>
+        </div>
+        <div class="universidad">
+            <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
+            <p>Student: Steicy Avilez Plaza</p>
+        </div>
+        <div class="creditos">
+            <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
+            <p>Credits: Images taken from Google and Facebook</p>
+            <p>Credits: Information created by Steicy and subsequently improved in its wording and structure with the support of the ChatGPT tool (OpenAI, 2026).</p>
+        </div>
+        <hr>
+        <div class="final">
+        <p>© 2026 Experience Tierralta • All rights reserved </p>    
+        </div>
     </footer>
 
     <script src="js/community events.js"></script>

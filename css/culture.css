@@ -200,6 +200,22 @@ header .container{
     max-width: 25%;
     padding: 0 4px;
 }
+
+.column {
+    /* Transición suave para que la sombra aparezca poco a poco */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+    /* Asegurar que la imagen no tenga sombra inicialmente */
+    box-shadow: none; 
+}
+
+.column:hover {
+    /* Sintaxis: horizontal vertical desenfoque color */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);                
+    
+    /* Opcional: Elevar la imagen un poco (efecto 3D) */
+    transform: translateY(-5px);                
+}
   
 .column img {
     margin-top: 8px;
@@ -209,12 +225,12 @@ header .container{
 
 footer{
     background: #1f2937;
-    color: #c6cbd4;
     text-align: center;
     padding: 50px 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
+
 .footer p{
     display: block;
     margin-block-start: 1em;
@@ -222,4 +238,36 @@ footer{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+}
+.materia h3{
+    font-size: 26px;
+    color: #e1e6ef;
+    margin-top: 15px;
+}
+.universidad {
+    margin-top: 15px;
+}
+.universidad p{
+    font-size: 14px;
+    font-weight: bold; /* O usa valores numéricos: 700, 800, 900 */
+    color: #c6cbd4;
+    margin-top: 3px;
+}
+.creditos{
+    margin-top: 6px;
+}
+.creditos p{
+    font-size: 12px;
+    color: #acb0b7;
+    margin-top: 3px;
+}
+.final p{
+    font-size: 12px;
+    color: #9ea1a7;
+}
+hr{   
+    border: none; /* Quita el borde por defecto */
+    border-top: 3px solid #2e3949; /* Define grosor, estilo y color */
+    width: 80%;   /* Ancho de la línea */
+    margin: 20px auto;  /* Centra la línea y añade margen superior/inferior */
 }

@@ -65,61 +65,77 @@
     </section>
 
     <!-- Sección de eventos comunitarios -->
-    <section id="comunitarios" class="informacion">
-        <div class="contenido">
-            <div class="eventos">
-                <div class="evento-imagen">
-                    <img src="../images/events/media maraton dorada 1.jpg" alt="imagen de media maraton dorada" width="400" height="400">
-                    <h2>Media maratón dorada</h2>
-                    <p>
-                        Este evento deportivo y solidario tuvo como propósito apoyar una causa social importante, la cual es, la construcción de la Casa Hogar de Macondo, un refugio para niños con cáncer y sus cuidadores.
-                        <br>
-                        La participación de la comunidad permitió recaudar fondos y demostrar el compromiso social de los habitantes en Tierralta, combinado deporte, solidaridad y esperanza.
-                    </p>                
+    <section id="tradiciones" class="informacion">
+        <div class="culuras">
+            <div class="cards">
+                <div class="card" onclick="abrirModal('maraton')">
+                    <img src="../images/events/media maraton dorada 1.jpg" alt="Fandango"/>
+                    <div class="card-body">
+                        <h2>Media maratón dorada</h2>
+                        <p>Este evento deportivo y solidario tuvo como propósito apoyar una causa social importante, la cual es, la construcción de la Casa Hogar de Macondo, un refugio para niños con cáncer y sus cuidadores.</p>
+                    </div>
                 </div>
-                <div class="evento-imagen">
-                    <img src="../images/events/festival gastronomico saberes y fogones 1.jpg" alt="imagen de festival gastronomico saberes y fogones" width="300" height="400">
-                    <h2>Festival gastronómico saberes y fogones </h2>
-                    <p>
-                        Este festival resalta la riqueza culinaria del Alto Sinú a través de concursos de cocina tradicional y participación de restaurantes locales.
-                        <br>
-                        Incluyendo música en vivo, muestras gastronómicas, buffet de comida típica y un mercado campesino donde se pueden adquirir productos frescos y locales, por eso, es un espacio ideal para disfrutar de la cultura a través de los sabores.
-                    </p>
+                <div class="card" onclick="abrirModal('gastronomico')">
+                    <img src="../images/events/festival gastronomico saberes y fogones 1.jpg" alt="Cumbia"/>
+                    <div class="card-body">
+                        <h2>Festival gastronómico saberes y fogones</h2>
+                        <p>Este festival resalta la riqueza culinaria del Alto Sinú a través de concursos de cocina tradicional y participación de restaurantes locales.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="eventos"> 
-                <div class="evento-imagen">
-                    <img src="../images/events/talleres en la biblioteca municipal 1.jpg" alt="imagen de talleres biblioteca municipal" width="300" height="400">
-                    <h2>Talleres en la biblioteca municipal</h2>
-                    <p>
-                        La biblioteca municipal organiza talleres dirigido a niños y jóvenes entre 8 y 16 años, promoviendo el aprendizaje y la creatividad.
-                        <br>
-                        Entre las actividades se incluyen danza, lectura, teatro, pintura y música, contribuyendo al desarrollo cultural y educativo de la comunidad.
-                    </p>                
+                <div class="card" onclick="abrirModal('biblioteca')">
+                    <img src="../images/events/talleres en la biblioteca municipal 1.jpg" alt="Vallenato"/>
+                    <div class="card-body">
+                        <h2>Talleres en la biblioteca municipal</h2>
+                        <p>La biblioteca municipal organiza talleres dirigido a niños y jóvenes entre 8 y 16 años, promoviendo el aprendizaje y la creatividad.</p>
+                    </div>
                 </div>
-                <div class="evento-imagen">
-                    <img src="../images/events/actividades de comfacor 1.jpg" alt="imagen de cactividades de comfacor" width="300" height="400">
-                    <h2>Actividades de Comfacor</h2>
-                    <p>
-                        La Caja de Compensación Familiar de Córdoba (Comfacor) también impulsa actividades para niños, niñas y jóvenes en el municipio.
-                        <br>
-                        Estas incluyen talleres de pintura, festivales culturales, actividades deportivas, manualidades y espacios recreativos que fomentan el talento, la creatividad y el uso adecuado del tiempo libre.
-                    </p>                
+                <div class="card" onclick="abrirModal('comfacor')">
+                    <img src="../images/events/actividades de comfacor 1.jpg" alt="Vallenato"/>
+                    <div class="card-body">
+                        <h2>Actividades de Comfacor </h2>
+                        <p>La Caja de Compensación Familiar de Córdoba (Comfacor) también impulsa actividades para niños, niñas y jóvenes en el municipio.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
+    <!-- ── MODAL ── -->
+    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="modal-box" id="modalBox">
+            <button class="modal-close" onclick="cerrarModal()">✕</button>
+            <div class="modal-img-wrap">
+                <img id="modal-img" src="" alt=""/>
+                <div class="modal-img-title" id="modal-titulo"></div>
+            </div>
+            <div class="modal-body">
+                <p id="modal-texto-1"></p>
+                <p id="modal-texto-2"></p>
+            </div>
+        </div>
+    </div>
+    
     <!-- Pie de página -->
     <footer>
-        <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
-        <p>Aplicación Multimedia - Fase 3</p>
-        <p>Estudiantes: Steicy Avilez Plaza</p>
-        <p>Referencias: contenido turístico basado en información pública de Tieralta - Córdoba </p>
-        <p>© 2026 Vive Tierralta • Todos los derechos reservados</p>
+        <div class="materia">
+            <h3>Aplicaciones Multimedia - Fase 3</h3>
+        </div>
+        <div class="universidad">
+            <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
+            <p>Estudiante: Steicy Avilez Plaza</p>
+        </div>
+        <div class="creditos">
+            <p>Referencias: contenido turístico basado en información pública de Tieralta - Córdoba </p>
+            <p>Créditos: Imágenes tomadas de Google y Facebook</p>
+            <p>Créditos: Información creada por Steicy, y posteriormente mejorada en su redacción y estructura con apoyo de la herramienta ChatGPT (OpenAI,2026).</p>
+        </div>
+        <hr>
+        <div class="final">
+        <p>© 2026 Vive Tierralta • Todos los derechos reservados</p>    
+        </div>
     </footer>
 
-    <script src="../js/community events.js"></script>
+    <script src="../es js/community events-es.js"></script>
 
 </body>
 </html>

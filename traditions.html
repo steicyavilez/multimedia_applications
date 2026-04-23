@@ -75,47 +75,66 @@
 
     <!-- Sección de cultura y tradiciones -->
     <section id="tradiciones" class="informacion">
-        <div class="contenido">
-            <div class="tradiciones">
-                <div class="culuras">
-                <div class="cultura-imagen">
-                    <img src="images/culture/fandango 1.jpg" alt="imagen de fandango" width="325" height="300">
-                    <h2>Fandango</h2>
-                    <p>
-                        The fandango is one of the region’s most representative cultural expressions, performed by folk bands and featured prominently in parades, dance troupes, and popular celebrations.
-                        <br>
-                        During this dance, the women wear colorful blouses, and the men wear the traditional vueltiao hat. It also features a characteristic element: the use of lit candles, which create a symbolic and festive atmosphere. Furthermore, this tradition involves people of all ages, allowing it to remain alive through time.
-                    </p>                
+        <div class="culuras">
+            <div class="cards">
+                <div class="card" onclick="abrirModal('fandango')">
+                    <img src="images/culture/fandango 1.jpg" alt="Fandango"/>
+                    <div class="card-body">
+                        <h2>Fandango</h2>
+                        <p>The fandango is one of the region's most representative cultural expressions, performed by folk bands and featured prominently in parades, dance troupes, and popular celebrations.</p>
+                    </div>
                 </div>
-                <div class="cultura-imagen">
-                    <img src="images/culture/cumbia 1.jpg" alt="imagen de cumbia"width="325" height="300">
-                    <h2>Cumbia</h2>
-                    <p>
-                        Cumbia is a dance that combines rhythm, elegance, and symbolism. It is danced in pairs with a courtship style, where the woman, wearing a wide skirt, makes circular movements while holding lit candles.
-                        <br>
-                        The man accompanies her with smooth, coordinated steps, circling the musical group counterclockwise. This dance represents cultural unity and is one of the most important expressions of regional folklore.
-                    </p>                
+                <div class="card" onclick="abrirModal('cumbia')">
+                    <img src="images/culture/cumbia 1.jpg" alt="Cumbia"/>
+                    <div class="card-body">
+                        <h2>Cumbia</h2>
+                        <p>Cumbia is a dance that combines rhythm, elegance, and symbolism. It is danced in pairs with a courtship style, where the woman, wearing a wide skirt, makes circular movements while holding lit candles.</p>
+                    </div>
                 </div>
-                <div class="cultura-imagen">
-                    <img src="images/culture/vallenato 1.jpg" alt="imagen de vallenato" width="325" height="300">
-                    <h2>Vallenato</h2>
-                    <p>
-                        Vallenato is an emblematic musical genre of the Caribbean region that also has a strong presence in Tierralta, as it is performed with traditional instruments such as the accordion, the caja (a type of drum), and the guacharaca (a percussion instrument).
-                        <br>
-                        Its main rhythms include paseo, merengue, son, and puya, and its lyrics often tell stories of daily life, love, and popular culture. Therefore, the dance is performed in pairs and is characterized by smooth, rhythmic movements that reflect closeness and emotional expression.
-                    </p>                
+                <div class="card" onclick="abrirModal('vallenato')">
+                    <img src="images/culture/vallenato 1.jpg" alt="Vallenato"/>
+                    <div class="card-body">
+                        <h2>Vallenato</h2>
+                        <p>Vallenato is an emblematic musical genre of the Caribbean region that also has a strong presence in Tierralta, as it is performed with traditional instruments such as the accordion, the caja, and the guacharaca.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- ── MODAL ── -->
+    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="modal-box" id="modalBox">
+            <button class="modal-close" onclick="cerrarModal()">✕</button>
+            <div class="modal-img-wrap">
+                <img id="modal-img" src="" alt=""/>
+                <div class="modal-img-title" id="modal-titulo"></div>
+            </div>
+            <div class="modal-body">
+                <p id="modal-texto-1"></p>
+                <p id="modal-texto-2"></p>
+            </div>
+        </div>
+    </div>
 
     <!-- Pie de página -->
     <footer>
-        <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
-        <p>Multimedia Application - Phase 3</p>
-        <p>Student: Steicy Avilez Plaza</p>
-        <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
-        <p>© 2026 Experience Tierralta • All rights reserved </p>
+        <div class="materia">
+            <h3>Multimedia Applications - Phase 3</h3>
+        </div>
+        <div class="universidad">
+            <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
+            <p>Student: Steicy Avilez Plaza</p>
+        </div>
+        <div class="creditos">
+            <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
+            <p>Credits: Images taken from Google and Facebook</p>
+            <p>Credits: Information created by Steicy and subsequently improved in its wording and structure with the support of the ChatGPT tool (OpenAI, 2026).</p>
+        </div>
+        <hr>
+        <div class="final">
+        <p>© 2026 Experience Tierralta • All rights reserved </p>    
+        </div>
     </footer>
 
     <script src="js/traditions.js"></script>
