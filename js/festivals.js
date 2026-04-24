@@ -17,13 +17,13 @@ const data = {
       p1:    "The Fandango of the Three Kings is one of Tierralta’s most important festivities and is celebrated in January. This event features parades, musical performances, and the traditional pollera dance. Participants wear typical costumes such as the vueltiao hat and dance to the rhythm of the fandango, often accompanied by lit candles.",
       p2:    "The participation of children in the children’s fandango is also a highlight, ensuring the transmission of this tradition to new generations. "
     },
-    cumbia: {
+    corralejas: {
       img:   "images/events/fiesta de corralejas 1.jpg",
       title: "Corralejas Festival",
       p1:    "Celebrated in March in honor of Saint Joseph, the corralejas are one of the region’s most representative festivities.",
       p2:    "This event includes activities related to cattle ranching traditions, as well as artistic performances, concerts, and folkloric presentations. Its large crowds and festive atmosphere make it a unique cultural experience for those visiting Tierralta at this time of year."
     },
-    vallenato: {
+    aniversario: {
       img:   "images/events/aniversario de tierralta 1.jpg",
       title: "Tierralta Anniversary",
       p1:    "In November, the municipality celebrates its anniversary with a wide-ranging cultural and recreational program.",

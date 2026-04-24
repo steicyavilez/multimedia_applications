@@ -9,3 +9,10 @@ function idioma(){
         location.href="../index.html";
     }
 }
+
+function scrollAbajo() {
+    window.scrollBy({
+        top: 400,        // ← cantidad de píxeles que baja
+        behavior: 'smooth'
+    });
+}

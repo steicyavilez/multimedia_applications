@@ -1,7 +1,7 @@
 /*Definir estilos para el body*/
 body{
     line-height: 1.6;
-    background-color: #edf5fe;
+    background: linear-gradient(to bottom, #c3defc, #dfeeff, #edf5fe);
     color: #333;
 }
 
@@ -35,6 +35,7 @@ header .container{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color:#adc4ed;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para que se lea mejor */
 }
 
 /* Barra principal */
@@ -189,6 +190,32 @@ header .container{
     font-weight: 400;
 }
 
+.flecha-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background: #1f2937;
+    color: #c6cbd4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 0 auto;
+    transform: translate(-0%, -50%); /* Centra el texto exactamente */
+}
+
+.flecha {
+    font-size: 1.5rem;
+    animation: subirBajar 1.2s ease-in-out infinite; /* ← animación */
+}
+
+@keyframes subirBajar {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(8px); } /* baja */
+    100% { transform: translateY(0); }   /* sube */
+}
 
 /*Estilos para el bloque hero*/
 .hero{
@@ -221,6 +248,7 @@ header .container{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
+
 /*Estilos para el bloque galeria*/
 .galeria {
     margin: 0;
@@ -249,6 +277,7 @@ header .container{
     
     /* Asegurar que la imagen no tenga sombra inicialmente */
     box-shadow: none; 
+    border-radius: 10px;
 }
 
 .column:hover {
@@ -258,10 +287,12 @@ header .container{
     /* Opcional: Elevar la imagen un poco (efecto 3D) */
     transform: translateY(-5px);                
 }
+
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    border-radius: 10px;
 }
 
 footer{

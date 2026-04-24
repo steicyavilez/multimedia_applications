@@ -13,23 +13,29 @@ function idioma(){
 
 const data = {
     fandango: {
-      img:   "../images/culture/fandango 1.jpg",
-      title: "Fandango",
-      p1:    "El fandango es una de las expresiones culturales más representativas de la región, ya que se interpreta con bandas folclóricas y es protagonista en desfiles, comparsas y celebraciones populares.",
-      p2:    "Durante este baile, las mujeres lucen coloridas poleras y los hombres el tradicional sombrero vueltiao, también, cuenta con un elemento característico, el cual, es el uso de velas encendidas que aportan un ambiente simbólico y festivo, además, esta tradición involucra a personas de todas las edades, lo que permute que se mantenga viva a través del tiempo.",
+      img:   "../images/events/fandango de reyes 1.jpg",
+      title: "Fandango de Reyes",
+      p1:    "El Fandango de Reyes es una de las festividades mas importantes de Tierralta y se celebra en el mes de enero, además, este evento reúne desfiles de comparsas, presentaciones de bandas musicales y el tradicional baile de la pollera, además, los participantes lucen trajes típicos como el sombrero vueltiao y bailan al rito del fandango, muchas veces acompañados de velas encendidas.",
+      p2:    "También se destacan la participación de niños en el fandango infantil, lo que garantiza la transmisión de esta tradición a las nuevas generaciones.",
     },
-    cumbia: {
-      img:   "../images/culture/cumbia 1.jpg",
-      title: "Cumbia",
-      p1:    "La cumbia es una danza que combina ritmo, elegancia y simbolismo, se baila en pareja con un estilo de cortejo, donde la mujer, con una falda amplia, realiza movimientos circulares mientas sostiene velas encendidas.",
-      p2:    "El hombre la acompaña con pasos suaves y coordinado, girando alrededor del grupo musical en sentido contrario a las manecillas del reloj, esta danza representa la unión cultural y es una de las manifestaciones mas importantes del folclor regional.",
+    corralejas: {
+      img:   "../images/events/fiesta de corralejas 1.jpg",
+      title: "Fiestas de Corralejas",
+      p1:    "Celebradas en marzo en honor a San José, las corralejas son una de las festividades mas representativas de la región.",
+      p2:    "Este evento incluye actividades relacionadas con la tradición ganadera, así como espectáculos artísticos, conciertos y presentaciones folclóricas, además, su gran convocatoria y ambiente festivo la convierte en una experiencia cultural única para quienes visitan Tierralta es esta época.",
     },
-    vallenato: {
-      img:   "../images/culture/vallenato 1.jpg",
-      title: "Vallenato",
-      p1:    "El vallenato es un genero musical emblemático de la región Caribe que también tiene gran presencia en Tierralta, ya que, se interpreta con instrumentos tradicionales como el acordeón, la caja y la guacharaca. ",
-      p2:    "Sus ritmos principales incluyen el paseo, merengue, son y puya, y sus letras suelen contar historias de la vida cotidiana, el amor y la cultura popular, por eso, el baile es en pareja y se caracteriza por movimientos suaves y cadenciosos que reflejan cercanía y expresión emocional.",
-    }
+    aniversario: {
+      img:   "../images/events/aniversario de tierralta 1.jpg",
+      title: "Aniversario de Tierralta",
+      p1:    "En el mes de noviembre se celebra el aniversario del municipio con una amplia programación cultural y recreativa.",
+      p2:    "Durante esta festividad se realizan conciertos gratuitos, presentaciones artísticas y actividades para toda la familia, además, la música vallenata, tropical y folclórica es protagonista, creando un ambiente de celebración e identidad local.",
+    },
+    turismo: {
+      img:   "../images/events/festival del turismo y la cultura 1.jpg",
+      title: "Festival del Turismo y la Cultura",
+      p1:    "Este festival tiene como objetivo promover el turismo sostenible y resaltar el patrimonio cultural de Tierralta.",
+      p2:    "Incluyendo espacios de dialogo sobre turismo comunitario, muestras artísticas, ferias gastronómicas con sabores locales, exhibiciones de artesanías, danzas y comparsas, por eso, es una excelente oportunidad para conocer la diversidad cultural y natural del municipio.",
+    },
 };
 
 function abrirModal(lugar) {

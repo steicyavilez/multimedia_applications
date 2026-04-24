@@ -12,23 +12,29 @@ function idioma(){
 
 
 const data = {
-    fandango: {
-      img:   "../images/culture/fandango 1.jpg",
-      title: "Fandango",
-      p1:    "El fandango es una de las expresiones culturales más representativas de la región, ya que se interpreta con bandas folclóricas y es protagonista en desfiles, comparsas y celebraciones populares.",
-      p2:    "Durante este baile, las mujeres lucen coloridas poleras y los hombres el tradicional sombrero vueltiao, también, cuenta con un elemento característico, el cual, es el uso de velas encendidas que aportan un ambiente simbólico y festivo, además, esta tradición involucra a personas de todas las edades, lo que permute que se mantenga viva a través del tiempo.",
+    maraton: {
+      img:   "../images/events/media maraton dorada 1.jpg",
+      title: "Media maratón dorada",
+      p1:    "Este evento deportivo y solidario tuvo como propósito apoyar una causa social importante, la cual es, la construcción de la Casa Hogar de Macondo, un refugio para niños con cáncer y sus cuidadores.",
+      p2:    "La participación de la comunidad permitió recaudar fondos y demostrar el compromiso social de los habitantes en Tierralta, combinado deporte, solidaridad y esperanza.",
     },
-    cumbia: {
-      img:   "../images/culture/cumbia 1.jpg",
-      title: "Cumbia",
-      p1:    "La cumbia es una danza que combina ritmo, elegancia y simbolismo, se baila en pareja con un estilo de cortejo, donde la mujer, con una falda amplia, realiza movimientos circulares mientas sostiene velas encendidas.",
-      p2:    "El hombre la acompaña con pasos suaves y coordinado, girando alrededor del grupo musical en sentido contrario a las manecillas del reloj, esta danza representa la unión cultural y es una de las manifestaciones mas importantes del folclor regional.",
+    gastronomico: {
+      img:   "../images/events/festival gastronomico saberes y fogones 1.jpg",
+      title: "Festival gastronómico saberes y fogones ",
+      p1:    "Este festival resalta la riqueza culinaria del Alto Sinú a través de concursos de cocina tradicional y participación de restaurantes locales.",
+      p2:    "Incluyendo música en vivo, muestras gastronómicas, buffet de comida típica y un mercado campesino donde se pueden adquirir productos frescos y locales, por eso, es un espacio ideal para disfrutar de la cultura a través de los sabores.",
     },
-    vallenato: {
-      img:   "../images/culture/vallenato 1.jpg",
-      title: "Vallenato",
-      p1:    "El vallenato es un genero musical emblemático de la región Caribe que también tiene gran presencia en Tierralta, ya que, se interpreta con instrumentos tradicionales como el acordeón, la caja y la guacharaca. ",
-      p2:    "Sus ritmos principales incluyen el paseo, merengue, son y puya, y sus letras suelen contar historias de la vida cotidiana, el amor y la cultura popular, por eso, el baile es en pareja y se caracteriza por movimientos suaves y cadenciosos que reflejan cercanía y expresión emocional.",
+    biblioteca: {
+      img:   "../images/events/talleres en la biblioteca municipal 1.jpg",
+      title: "Talleres en la biblioteca municipal",
+      p1:    "La biblioteca municipal organiza talleres dirigido a niños y jóvenes entre 8 y 16 años, promoviendo el aprendizaje y la creatividad.",
+      p2:    "Entre las actividades se incluyen danza, lectura, teatro, pintura y música, contribuyendo al desarrollo cultural y educativo de la comunidad.",
+    },
+    comfacor: {
+      img:   "../images/events/actividades de comfacor 1.jpg",
+      title: "Actividades de Comfacor ",
+      p1:    "La Caja de Compensación Familiar de Córdoba (Comfacor) también impulsa actividades para niños, niñas y jóvenes en el municipio.",
+      p2:    "Estas incluyen talleres de pintura, festivales culturales, actividades deportivas, manualidades y espacios recreativos que fomentan el talento, la creatividad y el uso adecuado del tiempo libre.",
     }
 };
 

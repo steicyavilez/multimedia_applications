@@ -11,19 +11,19 @@ function idioma(){
 }
 
 const data = {
-    fandango: {
+    museum: {
       img:   "images/culture/museo arqueologico zenu 1.jpg",
       title: "Zenú Archaeological Museum ",
       p1:    "This museum is a fundamental space for learning about the history of the region, as it houses an important collection of ceramic pieces made by the Zenú culture, as well as stone tools, bone remains, photographs, and other historical artifacts.",
       p2:    "A visit to this museum allows one to understand the practices, beliefs, and ways of life of the territory’s ancient inhabitants, strengthening the value of cultural heritage.",
     },
-    cumbia: {
+    artesanias: {
       img:   "images/culture/artesanias 1.jpg",
       title: "Crafts ",
       p1:    "The crafts of the Tierralta area are a living expression of cultural identity, especially those made by the Embera Neka Artisans Association of the Upper Sinú.",
       p2:    "These products include bracelets, necklaces, backpacks, hats, and bags, created using traditional techniques passed down through generations. Therefore, each piece reflects creativity, symbolism, and a deep connection with nature, combining ancestral wisdom with touches of innovation.",
     },
-    vallenato: {
+    danza: {
       img:   "images/culture/danza embera katio 1.jpg",
       title: "Embera Katio Dance ",
       p1:    "The dances of the Embera Katio people are an ancestral tradition that is still preserved today. These cultural expressions are deeply connected to nature, rituals, and the worldview of this indigenous community.",

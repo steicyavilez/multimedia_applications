@@ -35,6 +35,7 @@ header .container{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color:#adc4ed;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para que se lea mejor */
 }
 
 /* Barra principal */
