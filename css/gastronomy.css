@@ -30,12 +30,40 @@ header .container{
     padding: 0 20px;
 }
 
-.logo h1{
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-texto {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-nombre {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color:#adc4ed;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para que se lea mejor */
+    font-size: 17px;
+}
+
+.logo-slogan {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:#adc4ed;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para que se lea mejor */
+    font-size: 17px;
+}
+
+.logo-img{
+    height: 60px;
+    width: auto;
+    object-fit:contain;
 }
 
 /* Barra principal */
