@@ -13,12 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@500&family=Playfair+Display:wght@700&family=Roboto:wght@500wght&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-</head>
 <body>
+
     <!-- Cabecera con el menú de navegación -->
     <header>
         <div class="container">
-            <!-- LOGO -->
+
+            <!-- Logo -->
             <div class="nav-logo">
                 <img src="images/logo/logo-6.png" alt="Experience Tierralta" class="logo-img">
                 <div class="logo-texto">
@@ -26,28 +27,34 @@
                     <span class="logo-slogan">Tierralta</span>
                 </div>
             </div>
+
+            <!-- Navegaación principal -->
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown"><a href="routes.html">Routes</a>
+                    <li class="dropdown">
+                        <a href="routes.html">Routes</a>
                         <ul class="submenu">
                             <li><a href="natural.html">Natural</a></li>
                             <li><a href="recreational.html">Recreational</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="culture.html">Culture</a>
+                    <li class="dropdown">
+                        <a href="culture.html">Culture</a>
                         <ul class="submenu">
                             <li><a href="traditions.html">Traditions</a></li>
                             <li><a href="heritage.html">Heritage</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="gastronomy.html">Gastronomy</a>
+                    <li class="dropdown">
+                        <a href="gastronomy.html">Gastronomy</a>
                         <ul class="submenu">
                             <li><a href="typical-dishes.html">Typical dishes</a></li>
                             <li><a href="businesses.html">Businesses</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="events.html">Events</a>
+                    <li class="dropdown">
+                        <a href="events.html">Events</a>
                         <ul class="submenu">
                             <li><a href="festivals.html">Festivals</a></li>
                             <li><a href="community-events.html">Community events</a></li>
@@ -55,109 +62,140 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Selector de idioma -->
             <div class="languaje">
                 <!-- Botones para cambiar el idioma-->
                  <span class="en">English</span>
                  <input type="checkbox" class="check">
                  <span class="es">Spanish</span>
             </div>
+
         </div>
     </header> 
 
-    <!-- Sección de título -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="introduccion">
-                <h1>Typical Dishes</h1>
-                <p>
-                    The region’s dishes are known for being home-style, hearty, and full of flavor. They generally include side dishes such as rice, plantains, cassava, potatoes, or beans, along with proteins like pork, chicken, beef, or fish.
-                    <br>
-                    They are often complemented with fresh salads, avocado, and traditional beverages, offering balanced meals that are representative of Colombia Caribbean cuisine.
-                </p>
-                <img src="images/gastronomy/gastronomia.jpg" alt="imagen de urra" width="600" height="600">
+    <main>
+        <!-- Sección hero / introducción -->
+        <section id="platos-tipicos" class="hero">
+            <div class="hero-content">
+                <div class="introduccion">
+                    <h1>Typical Dishes</h1>
+                    <p>
+                        The region’s dishes are known for being home-style, hearty, and full of flavor. 
+                        They generally include side dishes such as rice, plantains, cassava, potatoes, or beans, 
+                        along with proteins like pork, chicken, beef, or fish.
+                        <br>
+                        They are often complemented with fresh salads, avocado, and traditional beverages, 
+                        offering balanced meals that are representative of Colombia Caribbean cuisine.
+                    </p>
+                </div>
+                <figure class="hero-figure">
+                    <img src="images/gastronomy/gastronomia.jpg" alt="imagen de urra" width="600" height="600">
+                </figure>
             </div>
-        </div>
-    </section>
-
-    <!-- Sección de platos tipicos-->
-    <section id="gastronomia" class="galeria"> 
-        <div class="texto" style="text-align:center">
-            <h2>Mote de Queso (Cheese Soup)</h2>
-            <p>
-                Mote de queso is one of Tierralta’s most representative dishes. It’s a thick soup made with yam and cubed cheese, seasoned with ingredients like onion, garlic, and lime.
-                <br>
-                Depending on the preparation, it may include cilantro, tomato, scallions, or whey, which gives it an even more distinctive flavor. This dish is often served with chicharron (fried pork rinds), avocado, patacones (fried plantains), or slices of plantain. 
-            </p>
-        </div>
-        <div class="row">
-            <div class="column">
-                <img src="images/gastronomy/mote-de-queso-1.jpg" alt="queso 1" width="400" height="300">
-            </div>
-            <div class="column">
-                <img src="images/gastronomy/mote-de-queso-2.webp" alt="queso 2" width="400" height="300">
-            </div>
-            <div class="column">
-                <img src="images/gastronomy/mote-de-queso-3.webp" alt="queso 3" width="400" height="300">
-            </div>
-        </div>
-        <div class="texto" style="text-align:center">
-            <h2>Bocachico (Fish)</h2>
-            <p>
-                Bocachico is a typical fish of the region and one of the most consumed in Tierralta. It can be prepared fried, grilled, or in soup, always retaining its characteristic flavor.
-                <br>
-                It’s usually served with rice, plantain, yucca, yam, salad, and avocado, making it delicious and representative of the local cuisine.
-            </p>
-        </div>
-        <div class="row">
-            <div class="column">
-                <img src="images/gastronomy/bocachico-1.jpg" alt="bocachico 1" width="400" height="300">
-            </div>
-            <div class="column">
-                <img src="images/gastronomy/bocachico-2.jpg" alt="bocachico 2" width="400" height="300">
-            </div>
-            <div class="column">
-                <img src="images/gastronomy/bocachico-3.jpg" alt="bocachico 3" width="400" height="300">
-            </div>
-        </div>
-        <div class="texto" style="text-align:center">
-            <h2>Machucado (mashed plantains)</h2>
-            <p>
-                Machucado (mashed plantains), also known as “cabeza de gato” (cat’s head), is a traditional dish primarily eaten for breakfast. They are made from cooked plantains that are then mashed until smooth.
-                <br>
-                They can be served as a paste or in small portions and are complemented with ingredients such as oil, onion, and garlic. It is also common to serve them with eggs, cheese, butter, pork rinds, ribs, or sausages, making them a nutritious and energizing option.
-            </p>
-        </div>
-        <div class="row">
-            <div class="column">
-                <img src="images/gastronomy/machucado-de-platano-1.jpg" alt="machucado 1" width="400" height="300">
-            </div>
-            <div class="column">
-                <img src="images/gastronomy/machucado-de-platano-2.jpg" alt="machucado 2" width="400" height="300">
-            </div>
-            <div class="column">
-                <img src="images/gastronomy/machucado-de-platano-3.jpg" alt="machucado 3" width="400" height="300">
-            </div>
-        </div>
-    </section>
+        </section>
+        
+        <!-- Sección de platos tipicos -->
+        <section id="gastronomia" class="galeria"> 
+            
+            <!-- Plato 1: Mote de Queso -->
+            <article class="plato">
+                <div class="texto">
+                    <h2>Mote de Queso (Cheese Soup)</h2>
+                    <p>
+                        Mote de queso is one of Tierralta’s most representative dishes. It’s a thick soup made 
+                        with yam and cubed cheese, seasoned with ingredients like onion, garlic, and lime.
+                        <br>
+                        Depending on the preparation, it may include cilantro, tomato, scallions, or whey, which 
+                        gives it an even more distinctive flavor. This dish is often served with chicharron 
+                        (fried pork rinds), avocado, patacones (fried plantains), or slices of plantain. 
+                    </p>
+                </div>
+                <div class="row">
+                    <figure class="column">
+                        <img src="images/gastronomy/mote-de-queso-1.jpg" alt="queso 1" width="400" height="300">
+                    </figure>
+                    <figure class="column">
+                        <img src="images/gastronomy/mote-de-queso-2.webp" alt="queso 2" width="400" height="300">
+                    </figure>
+                    <figure class="column">
+                        <img src="images/gastronomy/mote-de-queso-3.webp" alt="queso 3" width="400" height="300">
+                    </figure>
+                </div>
+            </article>
+            
+            <!-- Plato 2: Bocachico -->
+            <article class="plato">
+                <div class="texto">
+                    <h2>Bocachico (Fish)</h2>
+                    <p>
+                        Bocachico is a typical fish of the region and one of the most consumed in Tierralta. 
+                        It can be prepared fried, grilled, or in soup, always retaining its characteristic flavor.
+                        <br>
+                        It’s usually served with rice, plantain, yucca, yam, salad, and avocado, making it 
+                        delicious and representative of the local cuisine.
+                    </p>
+                </div>
+                <div class="row">
+                    <figure class="column">
+                        <img src="images/gastronomy/bocachico-1.jpg" alt="bocachico 1" width="400" height="300">
+                    </figure>
+                    <figure class="column">
+                        <img src="images/gastronomy/bocachico-2.jpg" alt="bocachico 2" width="400" height="300">
+                    </figure>
+                    <figure class="column">
+                        <img src="images/gastronomy/bocachico-3.jpg" alt="bocachico 3" width="400" height="300">
+                    </figure>
+                </div>
+            </article>
+            
+            <!-- Plato 3: Machucado -->
+            <article class="plato">
+                <div class="texto">
+                    <h2>Machucado (mashed plantains)</h2>
+                    <p>
+                        Machucado (mashed plantains), also known as “cabeza de gato” (cat’s head), is a 
+                        traditional dish primarily eaten for breakfast. They are made from cooked plantains 
+                        that are then mashed until smooth.
+                        <br>
+                        They can be served as a paste or in small portions and are complemented with ingredients 
+                        such as oil, onion, and garlic. It is also common to serve them with eggs, cheese, butter, 
+                        pork rinds, ribs, or sausages, making them a nutritious and energizing option.
+                    </p>
+                </div>
+                <div class="row">
+                    <figure class="column">
+                        <img src="images/gastronomy/machucado-de-platano-1.jpg" alt="machucado 1" width="400" height="300">
+                    </figure>
+                    <figure class="column">
+                        <img src="images/gastronomy/machucado-de-platano-2.jpg" alt="machucado 2" width="400" height="300">
+                    </figure>
+                    <figure class="column">
+                        <img src="images/gastronomy/machucado-de-platano-3.jpg" alt="machucado 3" width="400" height="300">
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
     
     <!-- Pie de página -->
     <footer>
         <div class="materia">
             <h3>Multimedia Applications - Phase 3</h3>
         </div>
-        <div class="universidad">
+        <address class="universidad">
             <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
             <p>Student: Steicy Avilez Plaza</p>
-        </div>
+        </address>
         <div class="creditos">
             <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
             <p>Credits: Images taken from Google and Facebook</p>
             <p>Credits: Information created by Steicy and subsequently improved in its wording and structure with the support of the ChatGPT tool (OpenAI, 2026).</p>
         </div>
         <hr>
-        <div class="final">
-        <p>© 2026 Experience Tierralta • All rights reserved </p>    
-        </div>
+        <small class="final">
+            <p>© 2026 Experience Tierralta • All rights reserved </p>    
+        </small>
     </footer>
 
     <script src="js/typical-dishes.js"></script>

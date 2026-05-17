@@ -13,12 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@500&family=Playfair+Display:wght@700&family=Roboto:wght@500wght&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-</head>
 <body>
+
     <!-- Cabecera con el menú de navegación -->
     <header>
         <div class="container">
-            <!-- LOGO -->
+
+            <!-- Logo -->
             <div class="nav-logo">
                 <img src="images/logo/logo-6.png" alt="Experience Tierralta" class="logo-img">
                 <div class="logo-texto">
@@ -26,28 +27,34 @@
                     <span class="logo-slogan">Tierralta</span>
                 </div>
             </div>
+
+            <!-- Navegaación principal -->
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown"><a href="routes.html">Routes</a>
+                    <li class="dropdown">
+                        <a href="routes.html">Routes</a>
                         <ul class="submenu">
                             <li><a href="natural.html">Natural</a></li>
                             <li><a href="recreational.html">Recreational</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="culture.html">Culture</a>
+                    <li class="dropdown">
+                        <a href="culture.html">Culture</a>
                         <ul class="submenu">
                             <li><a href="traditions.html">Traditions</a></li>
                             <li><a href="heritage.html">Heritage</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="gastronomy.html">Gastronomy</a>
+                    <li class="dropdown">
+                        <a href="gastronomy.html">Gastronomy</a>
                         <ul class="submenu">
                             <li><a href="typical-dishes.html">Typical dishes</a></li>
                             <li><a href="businesses.html">Businesses</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="events.html">Events</a>
+                    <li class="dropdown">
+                        <a href="events.html">Events</a>
                         <ul class="submenu">
                             <li><a href="festivals.html">Festivals</a></li>
                             <li><a href="community-events.html">Community events</a></li>
@@ -55,6 +62,8 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Selector de idioma -->
             <div class="languaje">
                 <!-- Botones para cambiar el idioma-->
                  <span class="en">English</span>
@@ -64,90 +73,103 @@
         </div>
     </header> 
 
-    <!-- Sección de título -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="introduccion">
-                <h1>Festivals</h1>
-                <p>
-                    Tierralta’s festivals are characterized by their energy, color, and rich folklore. Highlights include the fandango, comparsas (carnival troupes), parades, live music, and the region’s unique livestock traditions.
-                    <br>
-                    During these celebrations, thousands of people gather to share, enjoy, and actively participate in activities that showcase the municipality’s cultural identity.
-                </p>
+    <main>
+        <!-- Sección hero / introducción -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="introduccion">
+                    <h1>Festivals</h1>
+                    <p>
+                        Tierralta’s festivals are characterized by their energy, color, and rich folklore. Highlights include the fandango, comparsas (carnival troupes), parades, live music, and the region’s unique livestock traditions.
+                        <br>
+                        During these celebrations, thousands of people gather to share, enjoy, and actively participate in activities that showcase the municipality’s cultural identity.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <!-- subseccion de festivales -->
+        <section id="tradiciones" class="informacion">
+            <div class="culuras">
+                <div class="cards">
 
-    <!-- Sección de eventos y festivaless -->
-    <section id="tradiciones" class="informacion">
-        <div class="culuras">
-            <div class="cards">
-                <div class="card" onclick="abrirModal('fandango')">
-                    <img src="images/events/fandango-de-reyes-1.jpg" alt="fandango de reyes"/>
-                    <div class="card-body">
-                        <h2>Fandango de Reyes (Three Kings’ Day Festival)</h2>
-                        <p>The Fandango of the Three Kings is one of Tierralta’s most important festivities and is celebrated in January. This event features parades ...</p>
+                    <!-- Festival 1: Fandango de reyes -->
+                    <div class="card" onclick="abrirModal('fandango')">
+                        <img src="images/events/fandango-de-reyes-1.jpg" alt="fandango de reyes"/>
+                        <div class="card-body">
+                            <h2>Fandango de Reyes (Three Kings’ Day Festival)</h2>
+                            <p>The Fandango of the Three Kings is one of Tierralta’s most important festivities and is celebrated in January. This event features parades ...</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="abrirModal('corralejas')">
-                    <img src="images/events/fiesta-de-corralejas-1.jpg" alt="fiesta de corralejas"/>
-                    <div class="card-body">
-                        <h2>Corralejas Festival</h2>
-                        <p>Celebrated in March in honor of Saint Joseph, the corralejas are one of the region’s most representative festivities.</p>
-                    </div>
-                </div>
-                <div class="card" onclick="abrirModal('aniversario')">
-                    <img src="images/events/aniversario-de-tierralta-1.jpg" alt="aniversario de tierralta"/>
-                    <div class="card-body">
-                        <h2>Tierralta Anniversary</h2>
-                        <p>In November, the municipality celebrates its anniversary with a wide-ranging cultural and recreational program.</p>
-                    </div>
-                </div>
-                <div class="card" onclick="abrirModal('turismo')">
-                    <img src="images/events/festival-del-turismo-y-la-cultura-1.jpg" alt="festival del turismo"/>
-                    <div class="card-body">
-                        <h2>Tourism and Culture Festival </h2>
-                        <p>This festival aims to promote sustainable tourism and highlight Tierralta’s cultural heritage.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- ── MODAL ── -->
-    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
-        <div class="modal-box" id="modalBox">
-            <button class="modal-close" onclick="cerrarModal()">✕</button>
-            <div class="modal-img-wrap">
-                <img id="modal-img" src="" alt=""/>
-                <div class="modal-img-title" id="modal-titulo"></div>
-            </div>
-            <div class="modal-body">
-                <p id="modal-texto-1"></p>
-                <p id="modal-texto-2"></p>
-            </div>
-        </div>
-    </div>
 
+                    <!-- Festival 2: Corralejas -->
+                    <div class="card" onclick="abrirModal('corralejas')">
+                        <img src="images/events/fiesta-de-corralejas-1.jpg" alt="fiesta de corralejas"/>
+                        <div class="card-body">
+                            <h2>Corralejas Festival</h2>
+                            <p>Celebrated in March in honor of Saint Joseph, the corralejas are one of the region’s most representative festivities.</p>
+                        </div>
+                    </div>
+
+                    <!-- Festival 3: Aniversario de Tierralta -->
+                    <div class="card" onclick="abrirModal('aniversario')">
+                        <img src="images/events/aniversario-de-tierralta-1.jpg" alt="aniversario de tierralta"/>
+                        <div class="card-body">
+                            <h2>Tierralta Anniversary</h2>
+                            <p>In November, the municipality celebrates its anniversary with a wide-ranging cultural and recreational program.</p>
+                        </div>
+                    </div>
+
+                    <!-- Festival 4: Festival de Turismo y cultura -->
+                    <div class="card" onclick="abrirModal('turismo')">
+                        <img src="images/events/festival-del-turismo-y-la-cultura-1.jpg" alt="festival del turismo"/>
+                        <div class="card-body">
+                            <h2>Tourism and Culture Festival </h2>
+                            <p>This festival aims to promote sustainable tourism and highlight Tierralta’s cultural heritage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ── MODAL ── -->
+
+        <!-- Abrir el modal -->
+        <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+            <div class="modal-box" id="modalBox">
+
+                <!-- Cerrar el modal -->
+                <button class="modal-close" onclick="cerrarModal()">✕</button>
+                <div class="modal-img-wrap">
+                    <img id="modal-img" src="" alt=""/>
+                    <div class="modal-img-title" id="modal-titulo"></div>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-texto-1"></p>
+                    <p id="modal-texto-2"></p>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Pie de página -->
     <footer>
         <div class="materia">
             <h3>Multimedia Applications - Phase 3</h3>
         </div>
-        <div class="universidad">
+        <address class="universidad">
             <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
             <p>Student: Steicy Avilez Plaza</p>
-        </div>
+        </address>
         <div class="creditos">
             <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
             <p>Credits: Images taken from Google and Facebook</p>
             <p>Credits: Information created by Steicy and subsequently improved in its wording and structure with the support of the ChatGPT tool (OpenAI, 2026).</p>
         </div>
         <hr>
-        <div class="final">
-        <p>© 2026 Experience Tierralta • All rights reserved </p>    
-        </div>
+        <small class="final">
+            <p>© 2026 Experience Tierralta • All rights reserved </p>    
+        </small>
     </footer>
 
     <script src="js/festivals.js"></script>

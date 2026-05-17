@@ -13,12 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@500&family=Playfair+Display:wght@700&family=Roboto:wght@500wght&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-</head>
 <body>
+
     <!-- Cabecera con el menú de navegación -->
     <header>
         <div class="container">
-            <!-- LOGO -->
+
+            <!-- Logo -->
             <div class="nav-logo">
                 <img src="images/logo/logo-6.png" alt="Experience Tierralta" class="logo-img">
                 <div class="logo-texto">
@@ -26,28 +27,34 @@
                     <span class="logo-slogan">Tierralta</span>
                 </div>
             </div>
+
+            <!-- Navegaación principal -->
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown"><a href="routes.html">Routes</a>
+                    <li class="dropdown">
+                        <a href="routes.html">Routes</a>
                         <ul class="submenu">
                             <li><a href="natural.html">Natural</a></li>
                             <li><a href="recreational.html">Recreational</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="culture.html">Culture</a>
+                    <li class="dropdown">
+                        <a href="culture.html">Culture</a>
                         <ul class="submenu">
                             <li><a href="traditions.html">Traditions</a></li>
                             <li><a href="heritage.html">Heritage</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="gastronomy.html">Gastronomy</a>
+                    <li class="dropdown">
+                        <a href="gastronomy.html">Gastronomy</a>
                         <ul class="submenu">
                             <li><a href="typical-dishes.html">Typical dishes</a></li>
                             <li><a href="businesses.html">Businesses</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="events.html">Events</a>
+                    <li class="dropdown">
+                        <a href="events.html">Events</a>
                         <ul class="submenu">
                             <li><a href="festivals.html">Festivals</a></li>
                             <li><a href="community-events.html">Community events</a></li>
@@ -55,6 +62,8 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Selector de idioma -->
             <div class="languaje">
                 <!-- Botones para cambiar el idioma-->
                  <span class="en">English</span>
@@ -64,100 +73,108 @@
         </div>
     </header> 
 
-    <!-- Sección de título -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="introduccion">
-                <h1>Culture</h1>
-                <p>
-                    The culture of Tierralta, Córdoba, is a rich blend of ancestral traditions, artistic expressions, and customs that reflect the identity of its people. This municipality stands out for preserving the legacy of indigenous communities, especially the Embera Katio people, as well as for keeping alive the unique traditions of the Caribbean region. 
-                    <br>
-                    Through its music, dances, festivals, crafts, and historical heritage, Tierralta offers an authentic cultural experience that allows visitors to discover and appreciate its roots, its history, and its connection to nature.
-                </p>
+    <main>
+        <!-- Sección hero / introducción -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="introduccion">
+                    <h1>Culture</h1>
+                    <p>
+                        The culture of Tierralta, Córdoba, is a rich blend of ancestral traditions, artistic expressions, and customs that reflect the identity of its people. This municipality stands out for preserving the legacy of indigenous communities, especially the Embera Katio people, as well as for keeping alive the unique traditions of the Caribbean region. 
+                        <br>
+                        Through its music, dances, festivals, crafts, and historical heritage, Tierralta offers an authentic cultural experience that allows visitors to discover and appreciate its roots, its history, and its connection to nature.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="cards-section">
-        <a href="traditions.html" class="card">
-            <img src="images/culture/tradicion-boton.jpg" alt="Traditions">
-            <div class="card-info">
-                <h2>Traditions</h2>
-                <p>Discover the ancestral rhythms of the Embera Katio people and the vibrant beast of cumbia, fandango, and vallenato that define Tierralta’s soul.</p>
-                <span class="card-btn">Explore →</span>
-            </div>
-        </a>
+        </section>
         
-        <a href="heritage.html" class="card">
-            <img src="images/culture/patrimonio-boton.jpg" alt="Heritage">
-            <div class="card-info">
-                <h2>Heritage</h2>
-                <p>From Zenú archeological remains to handcrafted indigenous artisanry, explore the cultural and historical treasures that shape this region’s identity.</p>
-                <span class="card-btn">Explore →</span>
-            </div>
-        </a>
-    </section>
+        <!-- Botones a las subseciones -->
+        <section class="cards-section">
 
-    <!-- Sección de imagenes -->
-    <section id="imagenes" class="galeria"> 
-        <div class="row">
-            <div class="column">
-                <img src="images/culture/danza-embera-katio-2.jpg" alt="katio 2" loading="lazy" width="325" height="350">
+            <!-- Boton 1: subseccion tradiciones  -->
+            <a href="traditions.html" class="card">
+                <img src="images/culture/tradicion-boton.jpg" alt="Traditions">
+                <div class="card-info">
+                    <h2>Traditions</h2>
+                    <p>Discover the ancestral rhythms of the Embera Katio people and the vibrant beast of cumbia, fandango, and vallenato that define Tierralta’s soul.</p>
+                    <span class="card-btn">Explore →</span>
+                </div>
+            </a>
+            
+            <!-- Boton 2: subseccion patrimonio  -->
+            <a href="heritage.html" class="card">
+                <img src="images/culture/patrimonio-boton.jpg" alt="Heritage">
+                <div class="card-info">
+                    <h2>Heritage</h2>
+                    <p>From Zenú archeological remains to handcrafted indigenous artisanry, explore the cultural and historical treasures that shape this region’s identity.</p>
+                    <span class="card-btn">Explore →</span>
+                </div>
+            </a>
+        </section>
+        
+        <!-- Sección de imagenes -->
+        <section id="imagenes" class="galeria"> 
+            <div class="row">
+                <div class="column">
+                    <img src="images/culture/danza-embera-katio-2.jpg" alt="katio 2" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/artesanias-2.jpg" alt="artesanias 2" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/fandango-2.png" alt="fandango 2" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/artesanias-3.jpg" alt="artesanias 3" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/artesanias-4.jpg" alt="artesanias 4" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/fandango-3.jpg" alt="fandango 3" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/artesanias-5.jpg" alt="artesanias 5" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/danza-embera-katio-3.jpg" alt="katio 3" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/cumbia-2.jpg" alt="cumbia 2" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/artesanias-6.jpeg" alt="artesanias6" loading="lazy" width="325" height="350">
+                </div>  
+                <div class="column">
+                    <img src="images/culture/fandango-4.jpg" alt="fandango 4" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="images/culture/artesanias-7.jpg" alt="artesanias 7" loading="lazy" width="325" height="350">
+                </div>
             </div>
-            <div class="column">
-                <img src="images/culture/artesanias-2.jpg" alt="artesanias 2" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="images/culture/fandango-2.png" alt="fandango 2" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="images/culture/artesanias-3.jpg" alt="artesanias 3" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="images/culture/artesanias-4.jpg" alt="artesanias 4" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="images/culture/fandango-3.jpg" alt="fandango 3" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="images/culture/artesanias-5.jpg" alt="artesanias 5" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="images/culture/danza-embera-katio-3.jpg" alt="katio 3" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="images/culture/cumbia-2.jpg" alt="cumbia 2" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="images/culture/artesanias-6.jpeg" alt="artesanias6" loading="lazy" width="325" height="350">
-            </div>  
-            <div class="column">
-                <img src="images/culture/fandango-4.jpg" alt="fandango 4" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="images/culture/artesanias-7.jpg" alt="artesanias 7" loading="lazy" width="325" height="350">
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
+
 
     <!-- Pie de página -->
     <footer>
         <div class="materia">
             <h3>Multimedia Applications - Phase 3</h3>
         </div>
-        <div class="universidad">
+        <address class="universidad">
             <p>Universidad Nacional Abierta y a Distancia (UNAD)</p>
             <p>Student: Steicy Avilez Plaza</p>
-        </div>
+        </address>
         <div class="creditos">
             <p>References: Tourist content based on public information from Tierralta,Córdoba </p>
             <p>Credits: Images taken from Google and Facebook</p>
             <p>Credits: Information created by Steicy and subsequently improved in its wording and structure with the support of the ChatGPT tool (OpenAI, 2026).</p>
         </div>
         <hr>
-        <div class="final">
-        <p>© 2026 Experience Tierralta • All rights reserved </p>    
-        </div>
+        <small class="final">
+            <p>© 2026 Experience Tierralta • All rights reserved </p>    
+        </small>
     </footer>
 
     <script src="js/culture.js"></script>
