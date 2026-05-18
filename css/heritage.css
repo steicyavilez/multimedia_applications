@@ -76,7 +76,7 @@ header .container{
     margin: 0;
     font-family: var(--font-logo);
     font-weight: 700;
-    color:var(--color-accent-logo);
+    color: var(--color-accent-logo);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para que se lea mejor */
     font-size: 17px;
 }
@@ -107,7 +107,7 @@ header .container{
     list-style:none;
     display:flex;
     font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-nav);
     font-weight: 500;
 }
 
@@ -194,6 +194,7 @@ header .container{
     content: '';
     position: absolute;
     width: 25px;
+    height: 25px;
     background: var(--color-bg-quinary);
     border-radius: 25px;
     transition: 0.25s;

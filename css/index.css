@@ -35,6 +35,7 @@ body{
     color: var(--color-text-body);
 }
 
+
 *{
     margin:0;
     padding:0;
@@ -198,7 +199,7 @@ header .container{
     background: var(--color-bg-quinary);
     border-radius: 25px;
     transition: 0.25s;
-    background: var(--color-bg-quaternary);
+    border: 2px solid var(--color-bg-quaternary);
     box-sizing:border-box;
 }
 .languaje .check:checked:after{
@@ -206,7 +207,7 @@ header .container{
     border:2px solid var(--color-accent);
 }
 .languaje .check:checked:before{
-    background:var(--color-accent);
+    background: var(--color-accent);
 }
 
 .contenedor {
