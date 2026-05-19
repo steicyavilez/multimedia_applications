@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="../css/culture.css">
 </head>
 <body>
+
     <!-- Cabecera con el menú de navegación -->
     <header>
         <div class="container">
-            <!-- LOGO -->
+
+            <!-- Logo -->
             <div class="nav-logo">
                 <img src="../images/logo/logo-6.png" alt="Experience Tierralta" class="logo-img">
                 <div class="logo-texto">
@@ -18,28 +20,34 @@
                     <span class="logo-slogan">Tierralta</span>
                 </div>
             </div>
+
+            <!-- Navegación principal -->
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
-                    <li class="dropdown"><a href="routes.html">Rutas</a>
+                    <li class="dropdown">
+                        <a href="routes.html">Rutas</a>
                         <ul class="submenu">
                             <li><a href="natural.html">Natural</a></li>
                             <li><a href="recreational.html">Recreativas</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="culture.html">Cultura</a>
+                    <li class="dropdown">
+                        <a href="culture.html">Cultura</a>
                         <ul class="submenu">
                             <li><a href="traditions.html">Tradiciones</a></li>
                             <li><a href="heritage.html">Patrimonio</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="gastronomy.html">Gastronomía</a>
+                    <li class="dropdown">
+                        <a href="gastronomy.html">Gastronomía</a>
                         <ul class="submenu">
                             <li><a href="typical-dishes.html">Platos típicos</a></li>
                             <li><a href="businesses.html">Emprendimientos</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="events.html">Eventos</a>
+                    <li class="dropdown">
+                        <a href="events.html">Eventos</a>
                         <ul class="submenu">
                             <li><a href="festivals.html">Festivales</a></li>
                             <li><a href="community-events.html">Eventos comunitarios</a></li>
@@ -47,6 +55,8 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Selector de idioma -->
             <div class="languaje">
                 <!-- Botones para cambiar el idioma-->
                  <span class="en">Inglés</span>
@@ -56,81 +66,88 @@
         </div>
     </header> 
 
-    <!-- Sección de título -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="introduccion">
-                <h1>Cultura</h1>
-                <p>
-                    La cultura de Tierralta, Córdoba, es una mezcla rica de tradiciones ancestrales, expresiones artísticas y costumbres que reflejan la identidad de su gente, por eso, este municipio se destaca por preservar el legado de comunidades indígenas, especialmente del pueblo Embera Katio, así como por mantener vivas manifestaciones propias de la región Caribe.
-                    <br>
-                    A través de su música, danzas, festividades, artesanías y patrimonio histórico, Tierralta ofrece una experiencia cultural autentica que permite a los visitantes conocer y valorar sus raíces, su historia y su conexión con la naturaleza.
-                </p>
+    <main>
+        <!-- Sección hero / introducción -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="introduccion">
+                    <h1>Cultura</h1>
+                    <p>
+                        La cultura de Tierralta, Córdoba, es una mezcla rica de tradiciones ancestrales, expresiones artísticas y costumbres que reflejan la identidad de su gente, por eso, este municipio se destaca por preservar el legado de comunidades indígenas, especialmente del pueblo Embera Katio, así como por mantener vivas manifestaciones propias de la región Caribe.
+                        <br>
+                        A través de su música, danzas, festividades, artesanías y patrimonio histórico, Tierralta ofrece una experiencia cultural autentica que permite a los visitantes conocer y valorar sus raíces, su historia y su conexión con la naturaleza.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cards-section">
-        <a href="traditions.html" class="card">
-            <img src="../images/culture/tradicion-boton.jpg" alt="Tradiciones">
-            <div class="card-info">
-                <h2>Tradiciones </h2>
-                <p>Descubre los ritmos ancestrales del pueblo Embera Katio y la vibrante bestia de la cumbia, el fandango y el vallenato que definen el alma de Tierralta.</p>
-                <span class="card-btn">Explora →</span>
-            </div>
-        </a>
-        
-        <a href="heritage.html" class="card">
-            <img src="../images/culture/patrimonio-boton.jpg" alt="Patrimonio">
-            <div class="card-info">
-                <h2>Patrimonio </h2>
-                <p>Desde restos arqueológicos zenú hasta artesanía indígena artesanal, explora los tesoros culturales e históricos que conforman la identidad de esta región. </p>
-                <span class="card-btn">Explora →</span>
-            </div>
-        </a>
-    </section>
+        <!-- Botones a las subseciones -->
+        <section class="cards-section">
 
-    <!-- Sección de imagenes -->
-    <section id="imagenes" class="galeria"> 
-        <div class="row">
-            <div class="column">
-                <img src="../images/culture/danza-embera-katio-2.jpg" alt="katio 2" loading="lazy" width="325" height="350">
+            <!-- Boton 1: subseccion tradiciones  -->
+            <a href="traditions.html" class="card">
+                <img src="../images/culture/tradicion-boton.jpg" alt="Tradiciones">
+                <div class="card-info">
+                    <h2>Tradiciones </h2>
+                    <p>Descubre los ritmos ancestrales del pueblo Embera Katio y la vibrante bestia de la cumbia, el fandango y el vallenato que definen el alma de Tierralta.</p>
+                    <span class="card-btn">Explora →</span>
+                </div>
+            </a>
+
+            <!-- Boton 2: subseccion patrimonio  -->
+            <a href="heritage.html" class="card">
+                <img src="../images/culture/patrimonio-boton.jpg" alt="Patrimonio">
+                <div class="card-info">
+                    <h2>Patrimonio </h2>
+                    <p>Desde restos arqueológicos zenú hasta artesanía indígena artesanal, explora los tesoros culturales e históricos que conforman la identidad de esta región. </p>
+                    <span class="card-btn">Explora →</span>
+                </div>
+            </a>
+        </section>
+
+        <!-- Sección de imagenes -->
+        <section id="imagenes" class="galeria"> 
+            <div class="row">
+                <div class="column">
+                    <img src="../images/culture/danza-embera-katio-2.jpg" alt="katio 2" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="../images/culture/artesanias-2.jpg" alt="artesanias 2" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="../images/culture/fandango-2.png" alt="fandango 2" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="../images/culture/artesanias-3.jpg" alt="artesanias 3" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="../images/culture/artesanias-4.jpg" alt="artesanias 4" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="../images/culture/fandango-3.jpg" alt="fandango 3" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                   <img src="../images/culture/artesanias-5.jpg" alt="artesanias 5" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="../images/culture/danza-embera-katio-3.jpg" alt="katio 3" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="../images/culture/cumbia-2.jpg" alt="cumbia 2" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="../images/culture/artesanias-6.jpeg" alt="artesanias6" loading="lazy" width="325" height="350">
+                </div>  
+                <div class="column">
+                    <img src="../images/culture/fandango-4.jpg" alt="fandango 4" loading="lazy" width="325" height="350">
+                </div>
+                <div class="column">
+                    <img src="../images/culture/artesanias-7.jpg" alt="artesanias 7" loading="lazy" width="325" height="350">
+                </div>
             </div>
-            <div class="column">
-                <img src="../images/culture/artesanias-2.jpg" alt="artesanias 2" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="../images/culture/fandango-2.png" alt="fandango 2" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="../images/culture/artesanias-3.jpg" alt="artesanias 3" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="../images/culture/artesanias-4.jpg" alt="artesanias 4" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="../images/culture/fandango-3.jpg" alt="fandango 3" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="../images/culture/artesanias-5.jpg" alt="artesanias 5" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="../images/culture/danza-embera-katio-3.jpg" alt="katio 3" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="../images/culture/cumbia-2.jpg" alt="cumbia 2" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="../images/culture/artesanias-6.jpeg" alt="artesanias6" loading="lazy" width="325" height="350">
-            </div>  
-            <div class="column">
-                <img src="../images/culture/fandango-4.jpg" alt="fandango 4" loading="lazy" width="325" height="350">
-            </div>
-            <div class="column">
-                <img src="../images/culture/artesanias-7.jpg" alt="artesanias 7" loading="lazy" width="325" height="350">
-            </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- Pie de página -->
     <footer>

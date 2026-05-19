@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="../css/festivals.css">
 </head>
 <body>
+
     <!-- Cabecera con el menú de navegación -->
     <header>
-        <div class="container">
-            <!-- LOGO -->
+        <div class="container"> 
+
+            <!-- Logo -->
             <div class="nav-logo">
                 <img src="../images/logo/logo-6.png" alt="Experience Tierralta" class="logo-img">
                 <div class="logo-texto">
@@ -18,28 +20,34 @@
                     <span class="logo-slogan">Tierralta</span>
                 </div>
             </div>
+
+            <!-- Navegación principal -->
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
-                    <li class="dropdown"><a href="routes.html">Rutas</a>
+                    <li class="dropdown">
+                        <a href="routes.html">Rutas</a>
                         <ul class="submenu">
                             <li><a href="natural.html">Natural</a></li>
                             <li><a href="recreational.html">Recreativas</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="culture.html">Cultura</a>
+                    <li class="dropdown">
+                        <a href="culture.html">Cultura</a>
                         <ul class="submenu">
                             <li><a href="traditions.html">Tradiciones</a></li>
                             <li><a href="heritage.html">Patrimonio</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="gastronomy.html">Gastronomía</a>
+                    <li class="dropdown">
+                        <a href="gastronomy.html">Gastronomía</a>
                         <ul class="submenu">
                             <li><a href="typical-dishes.html">Platos típicos</a></li>
                             <li><a href="businesses.html">Emprendimientos</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="events.html">Eventos</a>
+                    <li class="dropdown">
+                        <a href="events.html">Eventos</a>
                         <ul class="submenu">
                             <li><a href="festivals.html">Festivales</a></li>
                             <li><a href="community-events.html">Eventos comunitarios</a></li>
@@ -47,6 +55,8 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Selector de idioma -->
             <div class="languaje">
                 <!-- Botones para cambiar el idioma-->
                  <span class="en">Inglés</span>
@@ -56,70 +66,85 @@
         </div>
     </header> 
 
-    <!-- Sección de título -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="introduccion">
-                <h1>Festivales</h1>
-                <p>
-                    Los festivales de Tierralta se caracterizan por su energía, colore y riqueza folclórica, entre ellos se destacan el fandango, las comparsas, los desfiles, la música en vivo y las tradiciones ganaderas propias de la región.
-                    <br>
-                    Durante estas celebraciones, miles de personas se reúnen para compartir, disfrutar y participar activamente en actividades que resaltan la identidad cultural del municipio.
-                </p>
+    <main>
+        <!-- Sección hero / introducción -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="introduccion">
+                    <h1>Festivales</h1>
+                    <p>
+                        Los festivales de Tierralta se caracterizan por su energía, colore y riqueza folclórica, entre ellos se destacan el fandango, las comparsas, los desfiles, la música en vivo y las tradiciones ganaderas propias de la región.
+                        <br>
+                        Durante estas celebraciones, miles de personas se reúnen para compartir, disfrutar y participar activamente en actividades que resaltan la identidad cultural del municipio.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección de eventos y festivaless -->
-    <section id="tradiciones" class="informacion">
-        <div class="culuras">
-            <div class="cards">
-                <div class="card" onclick="abrirModal('fandango')">
-                    <img src="../images/events/fandango-de-reyes-1.jpg" alt="fandango de reyes"/>
-                    <div class="card-body">
-                        <h2>Fandango de Reyes</h2>
-                        <p>El Fandango de Reyes es una de las festividades mas importantes de Tierralta y se celebra en el mes de enero, además, este evento reúne desfiles de comparsas ... </p>
+        <!-- subseccion de festivales -->
+        <section id="tradiciones" class="informacion">
+            <div class="culuras">
+                <div class="cards">
+
+                    <!-- Festival 1: Fandango de reyes -->
+                    <div class="card" onclick="abrirModal('fandango')">
+                        <img src="../images/events/fandango-de-reyes-1.jpg" alt="fandango de reyes"/>
+                        <div class="card-body">
+                            <h2>Fandango de Reyes</h2>
+                            <p>El Fandango de Reyes es una de las festividades mas importantes de Tierralta y se celebra en el mes de enero, además, este evento reúne desfiles de comparsas ... </p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="abrirModal('corralejas')">
-                    <img src="../images/events/fiesta-de-corralejas-1.jpg" alt="fiesta de corralejas"/>
-                    <div class="card-body">
-                        <h2>Fiestas de Corralejas</h2>
-                        <p>Celebradas en marzo en honor a San José, las corralejas son una de las festividades mas representativas de la región.</p>
+
+                    <!-- Festival 2: Corralejas -->
+                    <div class="card" onclick="abrirModal('corralejas')">
+                        <img src="../images/events/fiesta-de-corralejas-1.jpg" alt="fiesta de corralejas"/>
+                        <div class="card-body">
+                            <h2>Fiestas de Corralejas</h2>
+                            <p>Celebradas en marzo en honor a San José, las corralejas son una de las festividades mas representativas de la región.</p>
+                       </div>
                     </div>
-                </div>
-                <div class="card" onclick="abrirModal('aniversario')">
-                    <img src="../images/events/aniversario-de-tierralta-1.jpg" alt="aniversario de tierralta"/>
-                    <div class="card-body">
-                        <h2>Aniversario de Tierralta</h2>
-                        <p>En el mes de noviembre se celebra el aniversario del municipio con una amplia programación cultural y recreativa.</p>
+
+                    <!-- Festival 3: Aniversario de Tierralta -->
+                    <div class="card" onclick="abrirModal('aniversario')">
+                        <img src="../images/events/aniversario-de-tierralta-1.jpg" alt="aniversario de tierralta"/>
+                        <div class="card-body">
+                            <h2>Aniversario de Tierralta</h2>
+                            <p>En el mes de noviembre se celebra el aniversario del municipio con una amplia programación cultural y recreativa.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="abrirModal('turismo')">
-                    <img src="../images/events/festival-del-turismo-y-la-cultura-1.jpg" alt="festival del turismo"/>
-                    <div class="card-body">
-                        <h2>Festival del Turismo y la Cultura</h2>
-                        <p>Este festival tiene como objetivo promover el turismo sostenible y resaltar el patrimonio cultural de Tierralta.</p>
+                    
+                    <!-- Festival 4: Festival de Turismo y cultura -->
+                    <div class="card" onclick="abrirModal('turismo')">
+                        <img src="../images/events/festival-del-turismo-y-la-cultura-1.jpg" alt="festival del turismo"/>
+                        <div class="card-body">
+                            <h2>Festival del Turismo y la Cultura</h2>
+                            <p>Este festival tiene como objetivo promover el turismo sostenible y resaltar el patrimonio cultural de Tierralta.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     
-    <!-- ── MODAL ── -->
-    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
-        <div class="modal-box" id="modalBox">
-            <button class="modal-close" onclick="cerrarModal()">✕</button>
-            <div class="modal-img-wrap">
-                <img id="modal-img" src="" alt=""/>
-                <div class="modal-img-title" id="modal-titulo"></div>
-            </div>
-            <div class="modal-body">
-                <p id="modal-texto-1"></p>
-                <p id="modal-texto-2"></p>
+        <!-- ── MODAL ── -->
+
+        <!-- Abrir el modal -->
+        <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+            <div class="modal-box" id="modalBox">
+
+                <!-- Cerrar el modal -->
+                <button class="modal-close" onclick="cerrarModal()">✕</button>
+                <div class="modal-img-wrap">
+                    <img id="modal-img" src="" alt=""/>
+                    <div class="modal-img-title" id="modal-titulo"></div>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-texto-1"></p>
+                    <p id="modal-texto-2"></p>
+                </div>
             </div>
         </div>
-    </div>
+
+    </main>
 
 
     <!-- Pie de página -->

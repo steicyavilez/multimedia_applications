@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="../css/routes.css">
 </head>
 <body>
+
     <!-- Cabecera con el menú de navegación -->
     <header>
         <div class="container">
-            <!-- LOGO -->
+
+            <!-- Logo -->
             <div class="nav-logo">
                 <img src="../images/logo/logo-6.png" alt="Experience Tierralta" class="logo-img">
                 <div class="logo-texto">
@@ -18,28 +20,34 @@
                     <span class="logo-slogan">Tierralta</span>
                 </div>
             </div>
+
+            <!-- Navegación principal -->
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
-                    <li class="dropdown"><a href="routes.html">Rutas</a>
+                    <li class="dropdown">
+                        <a href="routes.html">Rutas</a>
                         <ul class="submenu">
                             <li><a href="natural.html">Natural</a></li>
                             <li><a href="recreational.html">Recreativas</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="culture.html">Cultura</a>
+                    <li class="dropdown">
+                        <a href="culture.html">Cultura</a>
                         <ul class="submenu">
                             <li><a href="traditions.html">Tradiciones</a></li>
                             <li><a href="heritage.html">Patrimonio</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="gastronomy.html">Gastronomía</a>
+                    <li class="dropdown">
+                        <a href="gastronomy.html">Gastronomía</a>
                         <ul class="submenu">
                             <li><a href="typical-dishes.html">Platos típicos</a></li>
                             <li><a href="businesses.html">Emprendimientos</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="events.html">Eventos</a>
+                    <li class="dropdown">
+                        <a href="events.html">Eventos</a>
                         <ul class="submenu">
                             <li><a href="festivals.html">Festivales</a></li>
                             <li><a href="community-events.html">Eventos comunitarios</a></li>
@@ -47,6 +55,8 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Selector de idioma -->
             <div class="languaje">
                 <!-- Botones para cambiar el idioma-->
                  <span class="en">Inglés</span>
@@ -56,45 +66,51 @@
         </div>
     </header> 
 
-    <!-- Sección de título -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="introduccion">
-                <h1>Rutas</h1>
-                <p>
-                    Las rutas turísticas de Tierralta han sido diseñadas para ofrecer experiencias variadas que se adaptan a todos los gustos, ya que hay desde recorridos ecológicos llenos de tranquilidad, hasta espacios recreativos ideales para compartir en familia o con amigos, cada ruta te permitirá descubrir la esencia del municipio desde diferentes perspectivas.
-                    <br>
-                    A través de estas rutas podrás conectar con la naturaleza, aprender sobre biodiversidad de la región, conocer proyectos sostenibles y disfrutar de actividades recreativas que combinan diversión, cultura y educación ambiental.
-                </p>
+    <main>
+         <!-- Sección hero / introducción  -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="introduccion">
+                    <h1>Rutas</h1>
+                    <p>
+                        Las rutas turísticas de Tierralta han sido diseñadas para ofrecer experiencias variadas que se adaptan a todos los gustos, ya que hay desde recorridos ecológicos llenos de tranquilidad, hasta espacios recreativos ideales para compartir en familia o con amigos, cada ruta te permitirá descubrir la esencia del municipio desde diferentes perspectivas.
+                        <br>
+                        A través de estas rutas podrás conectar con la naturaleza, aprender sobre biodiversidad de la región, conocer proyectos sostenibles y disfrutar de actividades recreativas que combinan diversión, cultura y educación ambiental.
+                    </p>
+                </div>
             </div>
+        </section>
+
+        <!-- Boton de secciones de rutas -->
+        <section class="cards-section">
+
+            <!-- Boton 1: Rutas naturales-->
+            <a href="natural.html" class="card">
+                <img src="../images/routes/ruta-natural-boton.jpg" alt="Natural Routes">
+                <div class="card-info">
+                    <h2>Rutas naturales </h2>
+                    <p>Te esperan cascadas, piscinas cristalinas y paisajes exuberantes. Desconecta de la ciudad y reconecta con la naturaleza de la región del Alto Sinú. </p>
+                    <span class="card-btn">Explora →</span>
+                </div>
+            </a>
+
+            <!-- Boton 2: Rutas recreativas-->
+            <a href="recreational.html" class="card">
+                <img src="../images/routes/ruta-recreativa-boton.jpg" alt="Recreational Routes">
+                <div class="card-info">
+                    <h2>Rutas recreativas </h2>
+                    <p>Diversión para todos: kayak, natación en el río, acampada y deportes en los espacios exteriores más vibrantes de Tierralta. </p>
+                    <span class="card-btn">Explora →</span>
+                </div>
+            </a>
+        </section>    
+
+
+        <!-- Imagen urra -->
+        <div class="imagen">
+            <img src="../images/routes/ruta.jpg" alt="imagen de urra" width="1200" height="1300">
         </div>
-    </section>
-
-    <section class="cards-section">
-        <a href="natural.html" class="card">
-            <img src="../images/routes/ruta-natural-boton.jpg" alt="Natural Routes">
-            <div class="card-info">
-                <h2>Rutas naturales </h2>
-                <p>Te esperan cascadas, piscinas cristalinas y paisajes exuberantes. Desconecta de la ciudad y reconecta con la naturaleza de la región del Alto Sinú. </p>
-                <span class="card-btn">Explora →</span>
-            </div>
-        </a>
-        
-        <a href="recreational.html" class="card">
-            <img src="../images/routes/ruta-recreativa-boton.jpg" alt="Recreational Routes">
-            <div class="card-info">
-                <h2>Rutas recreativas </h2>
-                <p>Diversión para todos: kayak, natación en el río, acampada y deportes en los espacios exteriores más vibrantes de Tierralta. </p>
-                <span class="card-btn">Explora →</span>
-            </div>
-        </a>
-    </section>    
-
-
-    <!-- Sección de mapa -->
-    <div class="imagen">
-        <img src="../images/routes/ruta.jpg" alt="imagen de urra" width="1200" height="1300">
-    </div>
+    </main>
     
     <!-- Pie de página -->
     <footer>

@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="../css/community-events.css">
 </head>
 <body>
+
     <!-- Cabecera con el menú de navegación -->
     <header>
         <div class="container">
-            <!-- LOGO -->
+
+            <!-- Logo -->
             <div class="nav-logo">
                 <img src="../images/logo/logo-6.png" alt="Experience Tierralta" class="logo-img">
                 <div class="logo-texto">
@@ -18,28 +20,34 @@
                     <span class="logo-slogan">Tierralta</span>
                 </div>
             </div>
+
+            <!-- Navegación principal -->
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
-                    <li class="dropdown"><a href="routes.html">Rutas</a>
+                    <li class="dropdown">
+                        <a href="routes.html">Rutas</a>
                         <ul class="submenu">
                             <li><a href="natural.html">Natural</a></li>
                             <li><a href="recreational.html">Recreativas</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="culture.html">Cultura</a>
+                    <li class="dropdown">
+                        <a href="culture.html">Cultura</a>
                         <ul class="submenu">
                             <li><a href="traditions.html">Tradiciones</a></li>
                             <li><a href="heritage.html">Patrimonio</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="gastronomy.html">Gastronomía</a>
+                    <li class="dropdown">
+                        <a href="gastronomy.html">Gastronomía</a>
                         <ul class="submenu">
                             <li><a href="typical-dishes.html">Platos típicos</a></li>
                             <li><a href="businesses.html">Emprendimientos</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="events.html">Eventos</a>
+                    <li class="dropdown">
+                        <a href="events.html">Eventos</a>
                         <ul class="submenu">
                             <li><a href="festivals.html">Festivales</a></li>
                             <li><a href="community-events.html">Eventos comunitarios</a></li>
@@ -47,6 +55,8 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Selector de idioma -->
             <div class="languaje">
                 <!-- Botones para cambiar el idioma-->
                  <span class="en">Inglés</span>
@@ -56,71 +66,85 @@
         </div>
     </header> 
 
-    <!-- Sección de título -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="introduccion">
-                <h1>Eventos comunitarios </h1>
-                <p>
-                    Los eventos comunitarios en Tierralta son fundamentales para fortalecer la convivencia y la participación ciudadana.
-                    <br>
-                    Generalmente son gratuitos o de bajo costo, lo que permite el acceso de toda la comunidad, ya que, incluyen conciertos, talleres, actividades deportivas, recreativas y culturales que fomentan la integración y el bienestar social.
-                </p>
+    <main>
+        <!-- Sección hero / introducción -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="introduccion">
+                    <h1>Eventos comunitarios </h1>
+                    <p>
+                        Los eventos comunitarios en Tierralta son fundamentales para fortalecer la convivencia y la participación ciudadana.
+                        <br>
+                        Generalmente son gratuitos o de bajo costo, lo que permite el acceso de toda la comunidad, ya que, incluyen conciertos, talleres, actividades deportivas, recreativas y culturales que fomentan la integración y el bienestar social.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección de eventos comunitarios -->
-    <section id="tradiciones" class="informacion">
-        <div class="culuras">
-            <div class="cards">
-                <div class="card" onclick="abrirModal('maraton')">
-                    <img src="../images/events/media-maraton-dorada-1.jpg" alt="media maraton"/>
-                    <div class="card-body">
-                        <h2>Media maratón dorada</h2>
-                        <p>Este evento deportivo y solidario tuvo como propósito apoyar una causa social importante, la cual es, la construcción de la Casa Hogar de Macondo, un refugio para niños con cáncer y sus cuidadores.</p>
+        <!-- subseccion eventos comunitarios -->
+        <section id="tradiciones" class="informacion">
+            <div class="culuras">
+                <div class="cards">
+
+                    <!-- Eventos comunitarios 1: Media maraton dorada -->
+                    <div class="card" onclick="abrirModal('maraton')">
+                        <img src="../images/events/media-maraton-dorada-1.jpg" alt="media maraton"/>
+                        <div class="card-body">
+                            <h2>Media maratón dorada</h2>
+                            <p>Este evento deportivo y solidario tuvo como propósito apoyar una causa social importante, la cual es, la construcción de la Casa Hogar de Macondo, un refugio para niños con cáncer y sus cuidadores.</p>
+                        </div>
+                    </div>
+
+                    <!-- Eventos comunitarios 2: Festival gastronomico -->
+                    <div class="card" onclick="abrirModal('gastronomico')">
+                        <img src="../images/events/festival-gastronomico-saberes-y-fogones-1.jpg" alt="festival gastronomico"/>
+                        <div class="card-body">
+                            <h2>Festival gastronómico saberes y fogones</h2>
+                            <p>Este festival resalta la riqueza culinaria del Alto Sinú a través de concursos de cocina tradicional y participación de restaurantes locales.</p>
+                        </div>
+                    </div>
+
+                    <!-- Eventos comunitarios 3: Talleres en la biblioteca municipal -->
+                    <div class="card" onclick="abrirModal('biblioteca')">
+                        <img src="../images/events/talleres-en-la-biblioteca-municipal-1.jpg" alt="talleres de biblioteca"/>
+                        <div class="card-body">
+                            <h2>Talleres en la biblioteca municipal</h2>
+                            <p>La biblioteca municipal organiza talleres dirigido a niños y jóvenes entre 8 y 16 años, promoviendo el aprendizaje y la creatividad.</p>
+                        </div>
+                    </div>
+
+                    <!-- Eventos comunitarios 4: Actividades de comfacor-->
+                    <div class="card" onclick="abrirModal('comfacor')">
+                        <img src="../images/events/actividades-de-comfacor-1.jpg" alt="actividad de comfacor"/>
+                        <div class="card-body">
+                            <h2>Actividades de Comfacor </h2>
+                            <p>La Caja de Compensación Familiar de Córdoba (Comfacor) también impulsa actividades para niños, niñas y jóvenes en el municipio.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" onclick="abrirModal('gastronomico')">
-                    <img src="../images/events/festival-gastronomico-saberes-y-fogones-1.jpg" alt="festival gastronomico"/>
-                    <div class="card-body">
-                        <h2>Festival gastronómico saberes y fogones</h2>
-                        <p>Este festival resalta la riqueza culinaria del Alto Sinú a través de concursos de cocina tradicional y participación de restaurantes locales.</p>
-                    </div>
+            </div>
+        </section>
+    
+        <!-- ── MODAL ── -->
+
+        <!-- Abrir el modal -->
+        <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+            <div class="modal-box" id="modalBox">
+
+                <!-- Cerrar el modal -->
+                <button class="modal-close" onclick="cerrarModal()">✕</button>
+                <div class="modal-img-wrap">
+                    <img id="modal-img" src="" alt=""/>
+                    <div class="modal-img-title" id="modal-titulo"></div>
                 </div>
-                <div class="card" onclick="abrirModal('biblioteca')">
-                    <img src="../images/events/talleres-en-la-biblioteca-municipal-1.jpg" alt="talleres de biblioteca"/>
-                    <div class="card-body">
-                        <h2>Talleres en la biblioteca municipal</h2>
-                        <p>La biblioteca municipal organiza talleres dirigido a niños y jóvenes entre 8 y 16 años, promoviendo el aprendizaje y la creatividad.</p>
-                    </div>
-                </div>
-                <div class="card" onclick="abrirModal('comfacor')">
-                    <img src="../images/events/actividades-de-comfacor-1.jpg" alt="actividad de comfacor"/>
-                    <div class="card-body">
-                        <h2>Actividades de Comfacor </h2>
-                        <p>La Caja de Compensación Familiar de Córdoba (Comfacor) también impulsa actividades para niños, niñas y jóvenes en el municipio.</p>
-                    </div>
+                <div class="modal-body">
+                    <p id="modal-texto-1"></p>
+                    <p id="modal-texto-2"></p>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <!-- ── MODAL ── -->
-    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
-        <div class="modal-box" id="modalBox">
-            <button class="modal-close" onclick="cerrarModal()">✕</button>
-            <div class="modal-img-wrap">
-                <img id="modal-img" src="" alt=""/>
-                <div class="modal-img-title" id="modal-titulo"></div>
-            </div>
-            <div class="modal-body">
-                <p id="modal-texto-1"></p>
-                <p id="modal-texto-2"></p>
-            </div>
-        </div>
-    </div>
-    
+    </main>
+
     <!-- Pie de página -->
     <footer>
         <div class="materia">

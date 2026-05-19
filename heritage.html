@@ -74,78 +74,75 @@
     </header> 
 
     <main>
+        <!-- Sección hero / introducción -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="introduccion">
+                    <h1>Heritage</h1>
+                    <p>
+                        The cultural and natural heritage of Tierralta is one of its greatest treasures, as its richness is reflected both in its natural landscapes and in its cultural traditions that have been preserved over time.
+                        <br>
+                        Including expressions such as music, dance, gastronomy, crafts, and the archaeological remains of the Zenú culture, these elements allow us to understand the history of the territory and the relationship of its inhabitants with the environment.
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d63210.24795733434!2d-76.18957430536618!3d8.035950249573915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x8e5a928933f82d77%3A0x9fd324da5f0cda24!2sInstitucion%20Educativa%20San%20Clemente%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.055448499999999!2d-76.1264894!4m5!1s0x8e5a935dc69bf407%3A0xe7ff317ea30d95d3!2sSaltillo%20del%20Tuis%20Tuis%2C%202WH7%2BQJ%2C%20Valencia%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.0294375!2d-76.0859375!4m5!1s0x8e5a937abe1860af%3A0x2c21700efb4412!2sSaltillo%20la%20oscurana%2C%200000%2C%20Vda.%20La%20Oscurana%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.0044863!2d-76.0940072!4m5!1s0x8e5a9114cf1a9d9f%3A0x7a94bebd0496e6d4!2sCentral%20Hidroel%C3%A9ctrica%20Urr%C3%A1%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.0142601!2d-76.20374509999999!4m5!1s0x8e5a93410a32ee3f%3A0xb25ddb7bff6aa97b!2sEstaci%C3%B3n%20Ecol%C3%B3gica%20Las%20Guartinajas%2C%20234517%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.06073!2d-76.1586082!4m5!1s0x8e5a920aa722dcaf%3A0xcadf44eeb2b23dd3!2sEcolagos%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.0707048!2d-76.1562058!5e0!3m2!1ses-419!2sco!4v1773265254928!5m2!1ses-419!2sco" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
 
+        <!-- Sección de cultura y patrimonio -->
+        <section id="tradiciones" class="informacion">
+            <div class="culuras">
+                <div class="cards">
+
+                    <!-- Cultura 1: Museo arqueologico Zenu -->
+                    <div class="card" onclick="abrirModal('museum')">
+                        <img src="images/culture/museo-arqueologico-zenu-1.jpg" alt="museo arqueologico"/>
+                        <div class="card-body">
+                            <h2>Zenú Archaeological Museum </h2>  
+                            <p>This museum is a fundamental space for learning about the history of the region, as it houses an important collection of ceramic pieces made by the Zenú culture, as well as stone tools, bone remains, photographs, and other historical artifacts.</p>                  
+                        </div>
+                    </div>
+
+                    <!-- Cultura 2: Artesanias -->
+                    <div class="card" onclick="abrirModal('artesanias')">
+                        <img src="images/culture/artesanias-1.jpg" alt="artesanias"/>
+                        <div class="card-body">
+                            <h2>Crafts </h2>
+                            <p>The crafts of the Tierralta area are a living expression of cultural identity, especially those made by the Embera Neka Artisans Association of the Upper Sinú.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cultura 3: Danza embera Katio -->
+                    <div class="card" onclick="abrirModal('danza')">
+                        <img src="images/culture/danza-embera-katio-1.jpg" alt="danza embera"/>
+                        <div class="card-body">
+                            <h2>Embera Katio Dance </h2>
+                            <p>The dances of the Embera Katio people are an ancestral tradition that is still preserved today. These cultural expressions are deeply connected to nature, rituals, and the worldview of this indigenous community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- ── MODAL ── -->
+
+        <!-- Abrir el modal -->
+        <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
+            <div class="modal-box" id="modalBox">
+
+                <!-- Cerrar el modal -->
+                <button class="modal-close" onclick="cerrarModal()">✕</button>
+                <div class="modal-img-wrap">
+                    <img id="modal-img" src="" alt=""/>
+                    <div class="modal-img-title" id="modal-titulo"></div>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-texto-1"></p>
+                    <p id="modal-texto-2"></p>
+                </div>
+            </div>
+        </div>
     </main>
-    
-    <!-- Sección de título -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="introduccion">
-                <h1>Heritage</h1>
-                <p>
-                    The cultural and natural heritage of Tierralta is one of its greatest treasures, as its richness is reflected both in its natural landscapes and in its cultural traditions that have been preserved over time.
-                    <br>
-                    Including expressions such as music, dance, gastronomy, crafts, and the archaeological remains of the Zenú culture, these elements allow us to understand the history of the territory and the relationship of its inhabitants with the environment.
-                </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d63210.24795733434!2d-76.18957430536618!3d8.035950249573915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x8e5a928933f82d77%3A0x9fd324da5f0cda24!2sInstitucion%20Educativa%20San%20Clemente%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.055448499999999!2d-76.1264894!4m5!1s0x8e5a935dc69bf407%3A0xe7ff317ea30d95d3!2sSaltillo%20del%20Tuis%20Tuis%2C%202WH7%2BQJ%2C%20Valencia%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.0294375!2d-76.0859375!4m5!1s0x8e5a937abe1860af%3A0x2c21700efb4412!2sSaltillo%20la%20oscurana%2C%200000%2C%20Vda.%20La%20Oscurana%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.0044863!2d-76.0940072!4m5!1s0x8e5a9114cf1a9d9f%3A0x7a94bebd0496e6d4!2sCentral%20Hidroel%C3%A9ctrica%20Urr%C3%A1%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.0142601!2d-76.20374509999999!4m5!1s0x8e5a93410a32ee3f%3A0xb25ddb7bff6aa97b!2sEstaci%C3%B3n%20Ecol%C3%B3gica%20Las%20Guartinajas%2C%20234517%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.06073!2d-76.1586082!4m5!1s0x8e5a920aa722dcaf%3A0xcadf44eeb2b23dd3!2sEcolagos%2C%20Tierralta%2C%20C%C3%B3rdoba!3m2!1d8.0707048!2d-76.1562058!5e0!3m2!1ses-419!2sco!4v1773265254928!5m2!1ses-419!2sco" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de cultura y patrimonio -->
-    <section id="tradiciones" class="informacion">
-        <div class="culuras">
-            <div class="cards">
-
-                <!-- Cultura 1: Museo arqueologico Zenu -->
-                <div class="card" onclick="abrirModal('museum')">
-                    <img src="images/culture/museo-arqueologico-zenu-1.jpg" alt="museo arqueologico"/>
-                    <div class="card-body">
-                        <h2>Zenú Archaeological Museum </h2>  
-                        <p>This museum is a fundamental space for learning about the history of the region, as it houses an important collection of ceramic pieces made by the Zenú culture, as well as stone tools, bone remains, photographs, and other historical artifacts.</p>                  
-                    </div>
-                </div>
-
-                <!-- Cultura 2: Artesanias -->
-                <div class="card" onclick="abrirModal('artesanias')">
-                    <img src="images/culture/artesanias-1.jpg" alt="artesanias"/>
-                    <div class="card-body">
-                        <h2>Crafts </h2>
-                        <p>The crafts of the Tierralta area are a living expression of cultural identity, especially those made by the Embera Neka Artisans Association of the Upper Sinú.</p>
-                    </div>
-                </div>
-
-                <!-- Cultura 3: Danza embera Katio -->
-                <div class="card" onclick="abrirModal('danza')">
-                    <img src="images/culture/danza-embera-katio-1.jpg" alt="danza embera"/>
-                    <div class="card-body">
-                        <h2>Embera Katio Dance </h2>
-                        <p>The dances of the Embera Katio people are an ancestral tradition that is still preserved today. These cultural expressions are deeply connected to nature, rituals, and the worldview of this indigenous community.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- ── MODAL ── -->
-
-    <!-- Abrir el modal -->
-    <div id="modal" class="modal-overlay" onclick="handleOverlayClick(event)">
-        <div class="modal-box" id="modalBox">
-
-            <!-- Cerrar el modal -->
-            <button class="modal-close" onclick="cerrarModal()">✕</button>
-            <div class="modal-img-wrap">
-                <img id="modal-img" src="" alt=""/>
-                <div class="modal-img-title" id="modal-titulo"></div>
-            </div>
-            <div class="modal-body">
-                <p id="modal-texto-1"></p>
-                <p id="modal-texto-2"></p>
-            </div>
-        </div>
-    </div>
-
 
     <!-- Pie de página -->
     <footer>
