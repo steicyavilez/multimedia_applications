@@ -1,3 +1,4 @@
+// Cambiar idioma
 var check=document.querySelector(".languaje .check");
 check.addEventListener('click',idioma);
 
@@ -8,4 +9,18 @@ function idioma(){
     }else{
         location.href="../routes.html";
     }
+}
+
+
+// Hamburguesa
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar     = document.querySelector('.navbar');
+const languaje   = document.querySelector('.languaje');
+
+if (menuToggle && navbar) {
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navbar.classList.toggle('open');
+        languaje.classList.toggle('open');
+    });
 }

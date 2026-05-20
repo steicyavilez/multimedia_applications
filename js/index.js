@@ -1,3 +1,4 @@
+// Cambiar idioma
 var check=document.querySelector(".languaje .check");
 check.addEventListener('click',idioma);
 
@@ -10,6 +11,7 @@ function idioma(){
     }
 }
 
+// Scroll abajo
 function scrollAbajo() {
     window.scrollBy({
         top: 400,        // ← cantidad de píxeles que baja

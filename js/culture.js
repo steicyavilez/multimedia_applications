@@ -9,3 +9,16 @@ function idioma(){
         location.href="../culture.html";
     }
 }
+
+// Hamburguesa
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar     = document.querySelector('.navbar');
+const languaje   = document.querySelector('.languaje');
+
+if (menuToggle && navbar) {
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navbar.classList.toggle('open');
+        languaje.classList.toggle('open');
+    });
+}
