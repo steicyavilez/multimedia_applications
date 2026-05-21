@@ -1,4 +1,6 @@
-/* VARIAvariables globales */
+/* ============================================================
+   VARIABLES GLOBALES
+   ============================================================ */
 :root {
     --color-bg-primary:     #edf5fe;
     --color-bg-secondary:   #ddecfe;
@@ -14,174 +16,231 @@
     --color-text-faint:        #9ea1a7;
     --color-text-white:        #e1e6ef;
 
-    --color-accent:         #76a1f1;
-    --color-accent-logo:    #adc4ed;
-    --color-heading:        #247294;
+    --color-accent:      #76a1f1;
+    --color-accent-logo: #adc4ed;
+    --color-heading:     #247294;
+    --color-modal:       #fff;
+    --color-border-top:  #2e3949;
 
-    --color-modal:      #fff;
-    --color-border-top: #2e3949;
+    --font-display: 'Playfair Display', serif;
+    --font-heading: 'Roboto', sans-serif;
+    --font-nav:     'Montserrat', sans-serif;
+    --font-logo:    'Poppins', sans-serif;
+    --font-body:    'Open Sans', sans-serif;
 
-    --font-display:   'Playfair Display', serif;
-    --font-heading:   'Roboto', sans-serif;
-    --font-nav:       'Montserrat', sans-serif;
-    --font-logo:      'Poppins', sans-serif;
-    --font-body:      'Open Sans', sans-serif;
+    --transition: 0.3s ease;
+    --radius:     12px;
 }
 
-/*Definir estilos para el body*/
-body{
+
+/* ============================================================
+   RESET Y BASE
+   ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     line-height: 1.6;
     background-color: var(--color-bg-primary);
     color: var(--color-text-body);
+    font-family: var(--font-body);
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
 }
 
-header{
-    background-color: var(--color-bg-tertiary); /*Color de fondo*/
-    color: var(--color-text-light); /*Color de la fuente*/
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+header {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-light);
     padding: 10px 0;
-    position:fixed;
-    width: 100%; /*Ocupa todo el ancho de la ventana del navegador*/
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000;
-
 }
-header .container{
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
 }
 
+
+/* ============================================================
+   LOGO
+   ============================================================ */
 .nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1100;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo-texto {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
 }
 
-.logo-nombre {
-    margin: 0;
-    font-family: var(--font-logo);
-    font-weight: 700;
-    color: var(--color-accent-logo);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para que se lea mejor */
-    font-size: 17px;
-}
-
+.logo-nombre,
 .logo-slogan {
-    margin: 0;
     font-family: var(--font-logo);
     font-weight: 700;
-    color: var(--color-accent-logo);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para que se lea mejor */
     font-size: 17px;
+    color: var(--color-accent-logo);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.logo-img{
-    height: 60px;
-    width: auto;
-    object-fit:contain;
-}
-/* Barra principal */
-.navbar{
-    background:var(--color-bg-tertiary);
-    padding:0 20px;
+
+/* ============================================================
+   BOTÓN HAMBURGUESA (solo móvil)
+   ============================================================ */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    padding: 0;
 }
 
-/* Menú horizontal */
-.menu{
-    list-style:none;
-    display:flex;
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-text-light);
+    border-radius: 3px;
+    transition: all var(--transition);
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+
+/* ============================================================
+   NAVEGACIÓN
+   ============================================================ */
+.navbar {
+    background-color: var(--color-bg-tertiary);
+    padding: 0 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
     font-size: 17px;
     font-family: var(--font-nav);
     font-weight: 500;
 }
 
-.menu > li{
-    position:relative;
+.menu > li {
+    position: relative;
 }
 
-.menu > li > a{
-    display:block;
-    padding:15px 20px;
-    color:var(--color-text-light);
-    text-decoration:none;
-    font-weight:bold;
-    transition: color 0.3s;
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color var(--transition);
 }
 
-.menu > li > a:hover{
-    background:var(--color-bg-tertiary);
-    color:var(--color-accent);
-}
-
-/* Submenú */
-.submenu{
-    position:absolute;
-    top:100%;
-    left:0;
-    background:var(--color-bg-tertiary);
-    min-width:180px;
-    list-style:none;
-    display:none;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Items del submenú */
-.submenu li a{
-    display:block;
-    padding:12px 15px;
-    color:var(--color-text-light);
-    text-decoration:none;
-    transition: color 0.3s;
-}
-
-.submenu li a:hover{
-    background: var(--color-bg-tertiary);
+.menu > li > a:hover,
+.menu > li > a[aria-current="page"] {
     color: var(--color-accent);
 }
 
-/* Mostrar submenu */
-.dropdown:hover .submenu{
-    display:block;
+.dropdown > a::after {
+    content: " ▼";
+    font-size: 12px;
 }
 
-/* Flecha */
-.dropdown > a::after{
-    content:" ▼";
-    font-size:12px;
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-bg-tertiary);
+    min-width: 180px;
+    list-style: none;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
 }
 
+.submenu li a {
+    display: block;
+    padding: 12px 15px;
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.submenu li a:hover {
+    color: var(--color-accent);
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+
+/* ============================================================
+   SELECTOR DE IDIOMA
+   ============================================================ */
 .languaje {
-    display:flex;
+    display: flex;
     align-items: center;
     gap: 10px;
-    font-family:  var(--font-nav);
+    font-family: var(--font-nav);
 }
-.languaje .en{
+
+.languaje .en,
+.languaje .es {
     color: var(--color-text-light);
+    font-size: 14px;
 }
-.languaje .es{
-    color: var(--color-text-light);
+
+.languaje .check {
+    position: relative;
+    width: 50px;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
 }
-.languaje .check{
-    position:relative;
-    width:50px;
-}
-.languaje .check:before{
+
+.languaje .check::before {
     content: '';
     position: absolute;
     width: 50px;
@@ -189,56 +248,70 @@ header .container{
     background: var(--color-bg-quaternary);
     border-radius: 25px;
 }
-.languaje .check:after{
+
+.languaje .check::after {
     content: '';
     position: absolute;
+    left: 0;
     width: 25px;
     height: 25px;
     background: var(--color-bg-quinary);
     border-radius: 25px;
-    transition: 0.25s;
     border: 2px solid var(--color-bg-quaternary);
-    box-sizing:border-box;
+    box-sizing: border-box;
+    transition: left var(--transition);
 }
-.languaje .check:checked:after{
-    left:25px;
-    border:2px solid var(--color-accent);
+
+.languaje .check:checked::after {
+    left: 25px;
+    border-color: var(--color-accent);
 }
-.languaje .check:checked:before{
-    background:var(--color-accent);
+
+.languaje .check:checked::before {
+    background: var(--color-accent);
 }
-.hero{
-    background-position: center;
+
+
+/* ============================================================
+   HERO / INTRODUCCIÓN
+   ============================================================ */
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px 20px 0px 20px;
+    padding: 50px 20px 0;
     margin-top: 70px;
 }
-.introduccion{
+
+.hero-content {
     max-width: 1200px;
     margin: auto;
-}
-.introduccion h1{
-    font-size: 48px;
-    color: var(--color-text-dark);
-    font-family: var(--font-display);
-    font-weight: 700;
-}
-.introduccion p{
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 0 70px 0px 70px;
-    color: var(--color-text-introduction);
-    font-family: var(--font-body);
-    font-weight: 400;
+    width: 100%;
 }
 
-/* ── SECTION ── */
+.introduccion h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-text-dark);
+    margin-bottom: 20px;
+}
+
+.introduccion p {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-text-introduction);
+    margin: 15px 50px 10px;
+    padding: 0 70px;
+    line-height: 1.8;
+}
+
+
+/* ============================================================
+   SECCIÓN DE FESTIVALES — CARDS
+   ============================================================ */
 #tradiciones {
     padding: 0 20px 60px;
     background-color: var(--color-bg-primary);
@@ -250,7 +323,6 @@ header .container{
     margin: auto;
 }
 
-/* ── CARDS ── */
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -260,28 +332,27 @@ header .container{
 }
 
 .card {
-    width: 380px;
-    background:  var(--color-bg-secondary);
-    border-radius: 10px;
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius);
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.22s ease, box-shadow 0.22s ease;
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
 .card img {
     width: 100%;
-    height: 420px;
+    height: 360px;
     object-fit: cover;
     display: block;
+    border-radius: 0;
 }
 
 .card-body {
@@ -289,29 +360,30 @@ header .container{
 }
 
 .card-body h2 {
-    font-size: 1.05rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: var(--color-heading);
-    font-size: 32px;
     font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--color-heading);
+    margin-bottom: 8px;
 }
 
 .card-body p {
-    font-size: 0.84rem;
-    color: var(--color-text-introduction);
     font-family: var(--font-body);
-    font-size: 20px;
+    font-size: 16px;
+    color: var(--color-text-introduction);
     line-height: 1.6;
 }
 
-/* ── OVERLAY ── */
+
+/* ============================================================
+   MODAL — OVERLAY
+   ============================================================ */
 .modal-overlay {
     display: none;
     position: fixed;
     inset: 0;
-    z-index: 1000;
-    background: rgba(0,0,0,0.65);
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(3px);
     overflow-y: auto;
     padding: 30px 16px 50px;
@@ -323,15 +395,15 @@ header .container{
 
 /* ── MODAL BOX ── */
 .modal-box {
-    background:  var(--color-bg-secondary);
+    background: var(--color-bg-secondary);
     width: 100%;
     max-width: 580px;
     border-radius: 18px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-    animation: popIn 0.3s cubic-bezier(.22,.68,0,1.2) both;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    animation: popIn 0.3s cubic-bezier(.22, .68, 0, 1.2) both;
 }
 
 @keyframes popIn {
@@ -339,13 +411,13 @@ header .container{
     to   { opacity: 1; transform: translateY(0)    scale(1);    }
 }
 
-    /* ── CLOSE BUTTON ── */
+/* ── CLOSE BUTTON ── */
 .modal-close {
     position: absolute;
     top: 12px;
     right: 12px;
     z-index: 20;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     color: var(--color-modal);
     border: none;
     border-radius: 50%;
@@ -356,31 +428,37 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.2s;
+    transition: background var(--transition);
     backdrop-filter: blur(4px);
     line-height: 1;
 }
-.modal-close:hover { background: rgba(0, 73, 200, 0.8); }
 
-/* ── IMAGE WRAP with title overlay ── */
+.modal-close:hover {
+    background: rgba(0, 73, 200, 0.8);
+}
+
+/* ── IMAGE WRAP con título superpuesto ── */
 .modal-img-wrap {
     position: relative;
 }
 
 .modal-img-wrap img {
     width: 100%;
-    height: 550px;
+    height: 420px;
     object-fit: cover;
     display: block;
+    border-radius: 0;
 }
 
 .modal-img-title {
     position: absolute;
-    bottom: 0; left: 0; right: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 12px 20px 16px;
     background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
     color: var(--color-text-white);
-    font-size: 32px;
+    font-size: 26px;
     font-family: var(--font-heading);
     font-weight: bold;
 }
@@ -391,68 +469,284 @@ header .container{
 }
 
 .modal-body p {
-    font-size: 0.93rem;
-    color: var(--color-text-introduction);
     font-family: var(--font-body);
-    font-size: 20px;
+    font-size: 17px;
+    color: var(--color-text-introduction);
     line-height: 1.78;
     margin-bottom: 12px;
 }
 
-/* scrollbar styling on the overlay */
+/* Scrollbar del overlay */
 .modal-overlay::-webkit-scrollbar { width: 7px; }
 .modal-overlay::-webkit-scrollbar-track { background: #d0dce8; }
 .modal-overlay::-webkit-scrollbar-thumb { background: #1565C0; border-radius: 99px; }
 
-@media (max-width: 480px) {
-    .modal-img-wrap img { height: 550px; }
-}
 
-footer{
-    background: var(--color-bg-tertiary);
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+    background-color: var(--color-bg-tertiary);
     text-align: center;
     padding: 50px 20px;
     font-family: var(--font-body);
-    font-weight: 400;
 }
 
-.footer p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-.materia h3{
-    font-size: 26px;
+.materia h3 {
+    font-size: 22px;
     color: var(--color-text-white);
-    margin-top: 15px;
+    margin-bottom: 10px;
 }
+
 .universidad {
     margin-top: 15px;
+    font-style: normal;
 }
-.universidad p{
+
+.universidad p {
     font-size: 14px;
-    font-weight: bold; /* O usa valores numéricos: 700, 800, 900 */
+    font-weight: 700;
     color: var(--color-text-light);
     margin-top: 3px;
 }
-.creditos{
+
+.creditos {
     margin-top: 6px;
+    max-width: 800px;
+    margin-inline: auto;
 }
-.creditos p{
+
+.creditos p {
     font-size: 12px;
     color: var(--color-text-muted);
-    margin-top: 3px;
+    margin-top: 5px;
 }
-.final p{
+
+hr {
+    border: none;
+    border-top: 3px solid var(--color-border-top);
+    width: 80%;
+    margin: 20px auto;
+}
+
+.final p {
     font-size: 12px;
     color: var(--color-text-faint);
 }
-hr{   
-    border: none; /* Quita el borde por defecto */
-    border-top: 3px solid var(--color-border-top); /* Define grosor, estilo y color */
-    width: 80%;   /* Ancho de la línea */
-    margin: 20px auto;  /* Centra la línea y añade margen superior/inferior */
+
+
+/* ============================================================
+   RESPONSIVE — TABLET  (max-width: 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+    .introduccion h1 {
+        font-size: 40px;
+    }
+
+    .introduccion p {
+        font-size: 18px;
+        padding: 0 30px;
+        margin: 15px 20px 10px;
+    }
+
+    .cards {
+        max-width: 700px;
+        gap: 16px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+
+    .card-body h2 {
+        font-size: 20px;
+    }
+
+    .modal-img-wrap img {
+        height: 360px;
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVE — MÓVIL GRANDE  (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* Header */
+    header .container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .languaje {
+        display: none;
+        width: 100%;
+        order: 4;
+        justify-content: center;
+        padding: 12px 20px;
+        border-top: 1px solid var(--color-border-top);
+        background-color: var(--color-bg-tertiary);
+    }
+
+    .languaje.open {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        order: 3;
+        padding: 0;
+    }
+
+    .navbar.open {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .menu > li > a {
+        padding: 12px 20px;
+        border-top: 1px solid var(--color-border-top);
+    }
+
+    .submenu {
+        position: static;
+        display: block;
+        box-shadow: none;
+        background-color: #263344;
+        min-width: 100%;
+    }
+
+    .submenu li a {
+        padding: 10px 35px;
+    }
+
+    .dropdown > a::after {
+        content: none;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 40px 15px 0;
+        margin-top: 70px;
+    }
+
+    .introduccion h1 {
+        font-size: 32px;
+    }
+
+    .introduccion p {
+        font-size: 16px;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    /* Cards: 1 columna en móvil */
+    #tradiciones {
+        margin-top: 30px;
+        padding: 0 15px 40px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        gap: 16px;
+    }
+
+    .card img {
+        height: 260px;
+    }
+
+    .card-body h2 {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        font-size: 15px;
+    }
+
+    /* Modal */
+    .modal-overlay {
+        padding: 20px 10px 40px;
+    }
+
+    .modal-img-wrap img {
+        height: 280px;
+    }
+
+    .modal-img-title {
+        font-size: 20px;
+    }
+
+    .modal-body {
+        padding: 16px 18px 24px;
+    }
+
+    .modal-body p {
+        font-size: 15px;
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVE — MÓVIL PEQUEÑO  (max-width: 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .logo-nombre,
+    .logo-slogan {
+        font-size: 14px;
+    }
+
+    .introduccion h1 {
+        font-size: 26px;
+    }
+
+    .introduccion p {
+        font-size: 14px;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    .card-body h2 {
+        font-size: 18px;
+    }
+
+    .card-body p {
+        font-size: 14px;
+    }
+
+    .modal-img-wrap img {
+        height: 240px;
+    }
+
+    .modal-img-title {
+        font-size: 17px;
+        padding: 10px 14px 12px;
+    }
+
+    .modal-body p {
+        font-size: 14px;
+    }
+
+    .languaje .en,
+    .languaje .es {
+        font-size: 12px;
+    }
 }

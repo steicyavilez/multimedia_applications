@@ -1,3 +1,4 @@
+// Cambiar idioma
 var check=document.querySelector(".languaje .check");
 check.addEventListener('click',idioma);
 
