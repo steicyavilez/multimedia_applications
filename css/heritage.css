@@ -419,8 +419,8 @@ header .container {
     animation: popIn 0.3s cubic-bezier(.22, .68, 0, 1.2) both;
 }
 
-/* Criterio 8 — Corrección 3: animación del modal sin scale para eliminar
-   el salto visual al combinar translateY + scale simultáneamente */
+/* animación del modal sin scale para eliminar el salto visual 
+   al combinar translateY + scale simultáneamente */
 @keyframes popIn {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0);    }
